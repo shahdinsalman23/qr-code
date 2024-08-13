@@ -15,7 +15,7 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false); // Track if the screen is mobile or not
   const [showsignup, setshowsignup] = useState(true);
   const [showlogin, setshowlogin] = useState(false);
-  const [showdashboard,setdashboard]= useState(false)
+  const [showdashboard, setdashboard] = useState(false)
 
   const [data, setData] = useState({
     sub: null,
@@ -112,22 +112,22 @@ const Header = () => {
 
 
 
-// Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
-// Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
-// Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
+  // Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
+  // Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
+  // Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
 
   const [isOpen, setIsOpen] = useState(false);
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-  
+
 
   const [isOpenz, setIsOpenz] = useState(false);
   const toggleDropdownz = () => {
     setIsOpenz(!isOpenz);
   };
 
-  
+
   const closeDropdown = (event) => {
     if (!event.target.matches('.dropbtn')) {
       setIsOpen(false);
@@ -141,15 +141,15 @@ const Header = () => {
     };
   }, []);
 
-// Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
-// Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
-// Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
+  // Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
+  // Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
+  // Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
 
 
   return (
     <>
       <header className="hero-header">
-          <div class="main-row">
+        <div class="main-row">
           <div className="your-main-logo-ul">
             <div className="your-logo">
               <img src={logo1} alt="" />
@@ -160,80 +160,80 @@ const Header = () => {
               <li>API</li>
 
               <div className="dropdown">
-              <li onClick={toggleDropdown} className="dropbtn">
+                <li onClick={toggleDropdown} className="dropbtn">
 
-      Resources
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-  <path d="M5.91996 7.49998C5.78835 7.50074 5.65789 7.47551 5.53605 7.42575C5.41422 7.37598 5.3034 7.30266 5.20996 7.20998L0.209961 2.20998L1.62996 0.789978L5.91996 5.08998L10.21 0.789978L11.63 2.20998L6.62996 7.20998C6.53652 7.30266 6.4257 7.37598 6.30387 7.42575C6.18203 7.47551 6.05157 7.50074 5.91996 7.49998Z" fill="#96949C"/>
-</svg>
-              </li>
+                  Resources
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path d="M5.91996 7.49998C5.78835 7.50074 5.65789 7.47551 5.53605 7.42575C5.41422 7.37598 5.3034 7.30266 5.20996 7.20998L0.209961 2.20998L1.62996 0.789978L5.91996 5.08998L10.21 0.789978L11.63 2.20998L6.62996 7.20998C6.53652 7.30266 6.4257 7.37598 6.30387 7.42575C6.18203 7.47551 6.05157 7.50074 5.91996 7.49998Z" fill="#96949C" />
+                  </svg>
+                </li>
 
-              <div id="myDropdown" className={`dropdown-content ${isOpen ? 'show' : ''}`}>
-        <a>Types of QR code</a>
-        <a >QR Codes for</a>
-        <a>QR Codes on</a>
-        <a>QR Code Generator</a>
-      
-              </div>
+                <div id="myDropdown" className={`dropdown-content ${isOpen ? 'show' : ''}`}>
+                  <a>Types of QR code</a>
+                  <a >QR Codes for</a>
+                  <a>QR Codes on</a>
+                  <a>QR Code Generator</a>
+
+                </div>
               </div>
 
 
               <div className="dropdown">
-              <li onClick={toggleDropdownz} className="dropbtn">
+                <li onClick={toggleDropdownz} className="dropbtn">
 
-              Features
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-  <path d="M5.91996 7.49998C5.78835 7.50074 5.65789 7.47551 5.53605 7.42575C5.41422 7.37598 5.3034 7.30266 5.20996 7.20998L0.209961 2.20998L1.62996 0.789978L5.91996 5.08998L10.21 0.789978L11.63 2.20998L6.62996 7.20998C6.53652 7.30266 6.4257 7.37598 6.30387 7.42575C6.18203 7.47551 6.05157 7.50074 5.91996 7.49998Z" fill="#96949C"/>
-</svg>
-              </li>
+                  Features
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path d="M5.91996 7.49998C5.78835 7.50074 5.65789 7.47551 5.53605 7.42575C5.41422 7.37598 5.3034 7.30266 5.20996 7.20998L0.209961 2.20998L1.62996 0.789978L5.91996 5.08998L10.21 0.789978L11.63 2.20998L6.62996 7.20998C6.53652 7.30266 6.4257 7.37598 6.30387 7.42575C6.18203 7.47551 6.05157 7.50074 5.91996 7.49998Z" fill="#96949C" />
+                  </svg>
+                </li>
 
-              <div id="myDropdownz" className={`dropdown-content ${isOpenz ? 'show' : ''}`}>
-        <a>Types of QR code</a>
-        <a >QR Codes for</a>
-        <a>QR Codes on</a>
-        <a>QR Code Generator</a>
-      
-              </div>
+                <div id="myDropdownz" className={`dropdown-content ${isOpenz ? 'show' : ''}`}>
+                  <a>Types of QR code</a>
+                  <a >QR Codes for</a>
+                  <a>QR Codes on</a>
+                  <a>QR Code Generator</a>
+
+                </div>
               </div>
 
 
             </ul>
-            </div>
-
-            {isMobile && (
-              <button className="menu-button" onClick={toggleMenu}>
-                <label class="byby" for="burger">
-                  <input type="checkbox" id="burger" />
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </label>
-              </button>
-            )}
-
-            <div
-              className={`header-btn-box ${isMobile && showMenu ? "show" : ""}`}
-            >
-
-           
-
-              <button  className="Register">
-                  Register
-              </button>
-
-              <button  className="Login">
-               Log In
-              </button>
-{
-  showdashboard &&
-              <button onClick={demo}>Dashboard</button>
-}
-            </div>
-
           </div>
+
+          {isMobile && (
+            <button className="menu-button" onClick={toggleMenu}>
+              <label class="byby" for="burger">
+                <input type="checkbox" id="burger" />
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </button>
+          )}
+
+          <div
+            className={`header-btn-box ${isMobile && showMenu ? "show" : ""}`}
+          >
+
+
+
+            <button className="Register">
+              Register
+            </button>
+
+            <button className="Login">
+              Log In
+            </button>
+            {
+              showdashboard &&
+              <button onClick={demo}>Dashboard</button>
+            }
+          </div>
+
+        </div>
       </header>
 
-       
+
     </>
   );
 };
