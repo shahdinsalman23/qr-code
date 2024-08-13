@@ -28,6 +28,7 @@ import {
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import Appearance from './Appearance';
+import { Container } from 'react-bootstrap';
 const Hero = () => {
 
     // State to track if "See All" button is clicked
@@ -58,7 +59,7 @@ const Hero = () => {
 
         <>
             <section className='hero'>
-                <div className="contanir">
+            <Container>
                     <div className="main-hero">
                         <div className="hero-box">
                             <div className="box-part-1">
@@ -309,6 +310,25 @@ const Hero = () => {
                                                                     </AccordionItemButton>
                                                                 </AccordionItemHeading>
                                                                 <AccordionItemPanel>
+                                                                <div className="input-Email">
+
+<button className='add-file-btn'>
+<svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></svg>
+Add Phone
+</button>
+
+<div className="Email-in-box">
+    <h2>Email*</h2>
+    <input type="E.g. name@email.com" />
+</div>
+
+<div className="Email-in-box">
+    <h2>Personal website</h2>
+    <input type="https://…" />
+</div>
+
+
+</div>
                                                                 </AccordionItemPanel>
                                                             </AccordionItem>
 
@@ -768,7 +788,7 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+            </Container>
             </section>
 
         </>

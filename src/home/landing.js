@@ -11,7 +11,6 @@ import Generator from '../components/Generator';
 import Marketing from '../components/marketing';
 import Everything from '../components/Everything';
 import Leave from '../components/leave';
-import Days from '../components/Days';
 
 
 
@@ -62,7 +61,6 @@ const Landing = () => {
       <Marketing />
       <Everything />
       <Leave /> 
-      <Days/>
       <Footer/>
     </>
   )

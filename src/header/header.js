@@ -144,14 +144,17 @@ const Header = () => {
   // Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
   // Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
   // Dropdown--js--codeDropdown--js--codeDropdown--js--codeDropdown--js--code
+  const navigate = useNavigate();
 
-
+  const home = () => {
+    navigate("/");
+  };
   return (
     <>
       <header className="hero-header">
         <div class="main-row">
           <div className="your-main-logo-ul">
-            <div className="your-logo">
+            <div className="your-logo" onClick={home}>
               <img src={logo1} alt="" />
             </div>
             <ul>

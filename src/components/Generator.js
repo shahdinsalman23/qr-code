@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { baseurl } from '../baseurl';
-// import step1 from '../img/steps1.svg';
-// import step2 from '../img/steps2.svg';
-// import step3 from '../img/steps.svg';
+import { Container } from 'react-bootstrap';
+import step1 from '../img/step1.png';
+import step2 from '../img/step2.png';
+import step3 from '../img/step3.png';
 
 
 
@@ -25,7 +26,7 @@ const Generator = () => {
   return (
     <>
       <section className='Generator'>
-        <div className="contanir">
+      <Container>
           <div className="main-Generator">
             <div className="Generator-tital">
               <h2>QR Code Generator: Create your free QR Code</h2>
@@ -50,14 +51,14 @@ const Generator = () => {
                   </div>
 
                   <div className="gr-card-img">
-                    {/* <img src={step1} alt="" /> */}
+                    <img src={step1} alt="" />
                   </div>
                 </div>
 
                 <div className="Generator-gr-card">
 
                   <div className="gr-card-img">
-                    {/* <img src={step2} alt="" /> */}
+                    <img src={step2} alt="" />
                   </div>
 
                   <div className="gr-card-tital more-style">
@@ -80,7 +81,7 @@ const Generator = () => {
                   </div>
 
                   <div className="gr-card-img">
-                    {/* <img src={step3} alt="" /> */}
+                    <img src={step3} alt="" />
                   </div>
                 </div>
                 <div className="Generator-gr-btn">
@@ -92,7 +93,7 @@ const Generator = () => {
 
             </div>
           </div>
-        </div>
+          </Container>
       </section>
 
 
