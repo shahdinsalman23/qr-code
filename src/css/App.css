@@ -1083,7 +1083,7 @@ ul.list_icon_container {
 }
 
 .generate_different_typeqrcode {
-  padding: 50px 0px;
+  padding: 110px 0px;
 }
 
 .generate_different_typeqrcode .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
@@ -1277,6 +1277,7 @@ footer.footer_main {
   height: 25px;
 }
 
+
 .google-logo {
   width: 100px;
 }
@@ -1438,6 +1439,13 @@ span.no3 {bottom: 230px;}
   display: flex;
   align-items: center;
   gap: 79px;
+}
+
+
+.footer_qr_google {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer_copyright {
