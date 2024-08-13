@@ -1844,7 +1844,7 @@ section.Leave {
   justify-content: center;
   width: 100%;
   gap: 14px;
-  padding-bottom: 60px;
+  padding-bottom: 60px !important;
 }
 
 .Leave-tab-box .react-tabs__tab {
@@ -2009,7 +2009,7 @@ section.Days {
 
 .my-tab-box ul.react-tabs__tab-list {
   background-color: #f7f7f7;
-  padding: 15px;
+  padding: 15px !important;
 }
 
 .my-tab-box .react-tabs__tab {
