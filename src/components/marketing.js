@@ -50,6 +50,18 @@ const Marketing = () => {
       };
 
 
+      const click4 = () => {
+        navigate("/Varietyinner");
+      };
+
+
+      const click5 = () => {
+        navigate("/Analytics");
+      };
+
+
+
+
 
 
     return (
@@ -81,13 +93,13 @@ const Marketing = () => {
                                         <img src={cardh3} alt="" className='yesh' />
                                     </div>
 
-                                    <div className="Marketing-card m1">
+                                    <div className="Marketing-card m1"  onClick={click4}>
                                         <img src={card4} alt="" className='noh' />
                                         <img src={cardh4} alt="" className='yesh' />
                                     </div>
                                 </div>
-                                <div className="Marketing-box-2">
-                                    <div className="Marketing-card mmain">
+                                <div className="Marketing-box-2" >
+                                    <div className="Marketing-card mmain" onClick={click5}>
                                         <img src={card5} alt="" className='noh' />
                                         <img src={cardh5} alt="" className='yesh' />
                                     </div>
@@ -148,7 +160,6 @@ const Marketing = () => {
                     </div>
                     </Container>
             </section>
-
 
         </>
     )

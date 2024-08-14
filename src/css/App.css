@@ -662,6 +662,9 @@ button{
 .checkbox-wrapper-33 .checkbox__trigger:focus + .checkbox__symbol {
   box-shadow: 0 0 0 0.25em var(--c-primary-20-percent-opacity);
 }
+h4.hello-style {
+  padding-bottom: 0px !important;
+}
 
 @-webkit-keyframes ripple-33 {
   from {
@@ -700,6 +703,13 @@ button{
   width: 20%;
 }
 
+.new-span {
+    color: #220E27;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    padding-bottom: 30px;
+}
 .selet-hero select {
   width: 100%;
   border-radius: 4px;
