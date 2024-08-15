@@ -15,6 +15,7 @@ import Analytics from "./marketing-page/Analyticsinner";
 
 
 
+
 function App() {
   return (
     <Provider store={store}>
@@ -28,6 +29,13 @@ function App() {
           <Route path="/Collaborating" exact element={<Collaborating/>} />
           <Route path="/Varietyinner" exact element={<Varietyinner/>} />
           <Route path="/Analytics" exact element={<Analytics/>} />
+          {/* <Route path="/Pixel" exact element={<Pixel/>} />
+          <Route path="/Templates" exact element={<Templates/>} />
+          <Route path="/Static" exact element={<Static/>} />
+          <Route path="/Bulk" exact element={<Bulk/>} />
+          <Route path="/Domain" exact element={<Domain/>} />
+          <Route path="/Password" exact element={<Password/>} />
+          <Route path="/Event" exact element={<Event/>} /> */}
           <Route path="/signup" exact element={<SignUp />} />
           <Route path="/login" exact element={<Login />} />
         </Routes>
