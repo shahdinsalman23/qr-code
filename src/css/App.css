@@ -85,7 +85,7 @@ header.hero-header {
 
 
 .header-btn-box button {
-  color: #1D59F9;
+  color: #2947c7;
   font-family: sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -246,7 +246,7 @@ span.icon-hero img {
 }
 
 .tab-box-hero .react-tabs__tab--selected {
-  border: 2px solid #1D59F9;
+  border: 2px solid #2947c7;
 }
 
 .Website-url-box {
@@ -366,7 +366,7 @@ span.icon-hero img {
 
 
 .qr-tab-btn .react-tabs__tab--selected button {
-  color: #1d59f9;
+  color: #2947c7;
 }
 
 
@@ -544,7 +544,7 @@ button.see-all-btn {
   background: #FFF;
   width: 15%;
   padding: 12px 0px 12px 12px;
-  color: #1d59f9;
+  color: #2947c7;
   font-family: sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -577,7 +577,7 @@ button {
   --s-xsmall: 0.625em;
   --s-small: 1.2em;
   --border-width: 1px;
-  --c-primary: #1d59f9;
+  --c-primary: #2947c7;
   --c-primary-20-percent-opacity: #1d58f948;
   --c-primary-10-percent-opacity: #1d58f948;
   --t-base: 0.4s;
@@ -853,8 +853,8 @@ h4.hello-style {
 
 .PDF-box button {
   color: #FFFFFF;
-  background-color: #1D59F9;
-  border: 1px solid #1D59F9;
+  background-color: #2947c7;
+  border: 1px solid #2947c7;
   padding: 12px 50px;
   border-radius: 50px;
   font-size: 12px;
@@ -864,7 +864,7 @@ h4.hello-style {
 
 .PDF-box button:hover {
   background: transparent;
-  color: #1d59f9;
+  color: #2947c7;
 }
 
 .Part-2-card {
@@ -945,8 +945,8 @@ h4.hello-style {
 }
 
 .hero-Download-box button:hover {
-  background-color: #1d59f9;
-  border: 1px solid #1d59f9;
+  background-color: #2947c7;
+  border: 1px solid #2947c7;
   color: #fff;
 }
 
@@ -1184,18 +1184,18 @@ ul.list_icon_container {
   font-weight: 700;
   line-height: 31.5px;
   border-radius: 28px;
-  background: #1D59F9;
+  background: #2947c7;
   padding: 15px 40px;
   transition: all .6s ease;
-  border: 1px solid #1D59F9;
+  border: 1px solid #2947c7;
   cursor: pointer;
 }
 
 
 .slider_mob_textbox a:hover {
   background-color: transparent;
-  border-color: #1D59F9;
-  color: #1D59F9 !important;
+  border-color: #2947c7;
+  color: #2947c7 !important;
 }
 
 .frame_under_tab {
@@ -1207,12 +1207,12 @@ ul.list_icon_container {
 
 
 .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-active.swiper-slide-thumb-active .list_icon_imgtxt {
-  border-color: #1D59F9;
+  border-color: #2947c7;
 }
 
 
 .mySwiper .swiper-slide-thumb-active .list_icon_imgtxt {
-  border-color: #1D59F9;
+  border-color: #2947c7;
 }
 
 .mySwiper .swiper-slide {
@@ -1226,7 +1226,124 @@ ul.list_icon_container {
   overflow-y: scroll;
   transform: translate3d(0.35px, 0px, 0px) !important;
 }
+section.Plans {
+  width: 100%;
+  padding: 120px;
+}
 
+.main-Plans {
+  width: 100%;
+}
+
+.Plans-tital {
+  width: 100%;
+}
+
+.Plans-tital h2 {
+  font-size: 44px;
+  line-height: 72px;
+  padding-bottom: 12px;
+  color: #000;
+  text-align: center;
+}
+
+p.para-tital-1 {
+  color: rgb(104, 103, 108);
+  margin: 0px auto;
+  font-size: 16px;
+  max-width: 560px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+}
+
+.Plans-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Plans-card {
+  width: 32%;
+  padding: 26px 24px 32px;
+  position: relative;
+  box-shadow: 0px 4px 6px #CDD1E0;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Plans-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0px;
+  color: #220E27;
+}
+
+.Plans-card  h2 {
+  color: #220E27;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 28px;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+.Plans-card span {
+  display: flex;
+  gap: 5px;
+  padding-top: 21px;
+}
+
+.Plans-card span p {
+  color: #7B777C;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0px;
+}
+
+.Plans-card a {
+  color: #7B777C;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 24px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.Plans-card button {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 8px 16px;
+  position: relative;
+  font-size: 18px;
+  color: #1D59F9;
+  border: 2px solid #1D59F9;
+  box-shadow: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  line-height: 1.75;
+  white-space: nowrap;
+  border-radius: 28px;
+  text-transform: none;
+  width: 100%;
+  background-color: #fff;
+}
+
+
+
+p.para-tital-2 {
+  margin: 0px;
+  text-align: center;
+  padding-top: 40px;
+}
 /************** Swiper Slider CSS End **********/
 
 
@@ -1272,8 +1389,8 @@ footer.footer_main {
 
 
 .hero-Download-box button:active {
-  background-color: #1d59f9;
-  border: 1px solid #1d59f9;
+  background-color: #2947c7;
+  border: 1px solid #2947c7;
   color: #fff;
 }
 
@@ -1612,7 +1729,7 @@ span.no3 {
 }
 
 .type_first_sec_txt h2 span {
-  color: #1D59F9;
+  color: #2947c7;
 }
 
 
@@ -1625,7 +1742,7 @@ span.no3 {
 }
 
 .type_first_sec_txt a {
-  background: #1D59F9;
+  background: #2947c7;
   color: #fff;
   padding: 10px 16px;
   border-radius: 28px;
@@ -1722,7 +1839,7 @@ section.create_type_sec {
 }
 
 .create_type_txt h6 {
-  color: #1D59F9;
+  color: #2947c7;
   font-size: 20px;
   font-weight: 800;
   line-height: 30px;
@@ -1809,8 +1926,8 @@ section.create_type_sec {
 
 .Generator-gr-btn button {
   border-radius: 28px;
-  background: #1D59F9;
-  border: 1px solid #1D59F9;
+  background: #2947c7;
+  border: 1px solid #2947c7;
   padding: 12px 45px;
   color: #FFF;
   font-family: sans-serif;
@@ -1824,7 +1941,7 @@ section.create_type_sec {
 
 .Generator-gr-btn button:hover {
   background: transparent;
-  color: #1d59f9;
+  color: #2947c7;
 }
 
 .main-Marketing {
@@ -1924,8 +2041,8 @@ img.yesh {
 .marketing-btn button {
   padding: 12px 36px;
   border-radius: 28px;
-  background: #1D59F9;
-  border: 1px solid #1D59F9;
+  background: #2947c7;
+  border: 1px solid #2947c7;
   color: #FFF;
   font-family: sans-serif;
   font-size: 18px;
@@ -1938,7 +2055,7 @@ img.yesh {
 
 .marketing-btn button:hover {
   background-color: transparent;
-  color: #1D59F9;
+  color: #2947c7;
 }
 
 section.Marketing {
@@ -2061,7 +2178,7 @@ section.Everything {
 }
 
 .Everything-faq-box .accordion__panel span {
-  color: #1D59F9;
+  color: #2947c7;
 }
 
 
@@ -2125,8 +2242,8 @@ section.Leave {
 }
 
 .Leave-tab-box .react-tabs__tab--selected {
-  border: 2px solid #1D59F9;
-  color: #1D59F9;
+  border: 2px solid #2947c7;
+  color: #2947c7;
 }
 
 .Leave-tab-boxing {
@@ -2190,9 +2307,9 @@ section.Leave {
 
 .know-box button {
   border-radius: 28px;
-  background: #1D59F9;
+  background: #2947c7;
   padding: 12px 28px;
-  border: 1px solid #1d59f9;
+  border: 1px solid #2947c7;
   color: #FFF;
   font-family: sans-serif;
   font-size: 18px;
@@ -2206,7 +2323,7 @@ section.Leave {
 
 .know-box button:hover {
   background-color: transparent;
-  color: #1D59F9;
+  color: #2947c7;
 }
 
 .main-know-box {
@@ -2217,7 +2334,7 @@ section.Leave {
 section.Days {
   width: 100%;
   padding: 105px 0px 45px 0px;
-  background: linear-gradient(0deg, #220E27 15.06%, #1D59F9 100%);
+  background: linear-gradient(0deg, #220E27 15.06%, #2947c7 100%);
 }
 
 .main-Days {
@@ -2271,7 +2388,7 @@ section.Days {
 
 .Days-tital button:hover {
   background-color: #fff;
-  color: #1D59F9;
+  color: #2947c7;
 }
 
 .Days-tital img {
@@ -2312,8 +2429,8 @@ section.Days {
 
 .change-click-btn button {
   width: 14%;
-  color: #1D59F9;
-  border: 2px solid #1D59F9;
+  color: #2947c7;
+  border: 2px solid #2947c7;
   box-shadow: none;
   background-color: #FFFFFF;
   padding: 12px 0px;
@@ -2354,8 +2471,8 @@ section.Days {
 
 .change-click-btn button {
   width: 14%;
-  color: #1D59F9;
-  border: 2px solid #1D59F9;
+  color: #2947c7;
+  border: 2px solid #2947c7;
   box-shadow: none;
   background-color: #FFFFFF;
   padding: 12px 0px;
@@ -2459,7 +2576,7 @@ section.Days {
 }
 
 .checkbox-wrapper-51 input[type="checkbox"]:checked+.toggle:before {
-  background: #1D59F9;
+  background: #2947c7;
 }
 
 .checkbox-wrapper-51 input[type="checkbox"]:checked+.toggle span {
@@ -2494,14 +2611,14 @@ section.Days {
 button.add-file-btn svg {
   width: 24px;
   height: 24px;
-  fill: #1d59f9;
+  fill: #2947c7;
   margin-right: 5px;
 }
 
 button.add-file-btn {
   width: 18%;
   background-color: transparent;
-  border: 1px solid #1d59f9;
+  border: 1px solid #2947c7;
   padding: 14px 16px;
   position: relative;
   font-size: 18px;
@@ -2514,7 +2631,7 @@ button.add-file-btn {
   white-space: nowrap;
   border-radius: 28px;
   text-transform: none;
-  color: #1d59f9;
+  color: #2947c7;
   margin-bottom: 15px;
 }
 

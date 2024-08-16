@@ -8,7 +8,7 @@ import { baseurl } from "../baseurl";
 import { GoogleLogin } from "@react-oauth/google";
 import SignUp from "../login/signup";
 import Login from "../login/login";
-import logo1 from "../img/QRFY_logo.svg";
+import logo1 from "../img/head-log.svg";
 
 const Header = () => {
 

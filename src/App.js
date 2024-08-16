@@ -19,6 +19,8 @@ import Custom from "./marketing-page/Custom";
 import Password from "./marketing-page/Password";
 import Tracking from "./marketing-page/Tracking";
 import Signup from "./login/signup";
+import Qrtypeone from "./generate-qr-types/qr-type-1/Qrtypeone";
+import Prices from "./prices/Prices";
 
 
 
@@ -31,6 +33,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" exact element={<Landing/>} />
+          <Route path="/Prices" exact element={<Prices/>} />
           <Route path="/Editing" exact element={<Editinginner/>} />
           <Route path="/Dynamic" exact element={<Dynamicinner/>} />
           <Route path="/Collaborating" exact element={<Collaborating/>} />
