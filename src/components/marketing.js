@@ -61,7 +61,7 @@ const Marketing = () => {
 
 
       const click6 = () => {
-        navigate("/Pixel");
+        navigate("/Facebook");
       };
 
       
@@ -83,7 +83,7 @@ const Marketing = () => {
       
 
       const click10 = () => {
-        navigate("/Domain");
+        navigate("/Custom");
       };
 
 
@@ -94,7 +94,7 @@ const Marketing = () => {
       };
 
       const click12 = () => {
-        navigate("/Event");
+        navigate("/Tracking");
       };
 
 

@@ -113,9 +113,6 @@ const Updating3  = () => {
     </section>
 
 
-
-
-
     <section className='Updating  '>
     <div className="contanir">
         <div className="main-Dynamic">
