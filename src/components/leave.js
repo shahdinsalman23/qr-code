@@ -17,6 +17,7 @@ import {
     AccordionItemPanel,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
+import { Container } from 'react-bootstrap';
 
 const Leave = () => {
 
@@ -32,7 +33,7 @@ const Leave = () => {
     return (
         <>
             <section className='Leave'>
-                <div className="contanir">
+            <Container>
                     <div className="main-Leave">
                         <div className="Leave-tital">
                             <h2>Do not leave with doubt</h2>
@@ -436,7 +437,7 @@ const Leave = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+            </Container>
             </section>
         </>
     )

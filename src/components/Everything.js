@@ -15,6 +15,7 @@ import {
     AccordionItemPanel,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
+import { Container } from 'react-bootstrap';
 
 const Everything = () => {
 
@@ -30,7 +31,7 @@ const Everything = () => {
     return (
         <>
             <section className='Everything'>
-                <div className="contanir">
+            <Container>
                     <div className="min-Everything">
                         <div className="Everything-tital">
                             <h2>Everything you need to know to get started</h2>
@@ -110,7 +111,7 @@ const Everything = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                    </Container>
             </section>
         </>
     )

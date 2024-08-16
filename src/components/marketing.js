@@ -27,16 +27,27 @@ import cardh5 from '../img/cardh5.png';
 import cardh6 from '../img/cardh6.png';
 import cardh9 from '../img/cardh9.png';
 import cardh10 from '../img/cardh10.png';
+import { Container } from 'react-bootstrap';
 
 
 
 const Marketing = () => {
 
 
+    const navigate = useNavigate();
 
 
+    const click1 = () => {
+        navigate("/Editing");
+      };
 
+      const click2 = () => {
+        navigate("/Dynamic");
+      };
 
+      const click3 = () => {
+        navigate("/Collaborating");
+      };
 
 
 
@@ -44,7 +55,7 @@ const Marketing = () => {
     return (
         <>
             <section className='Marketing'>
-                <div className="contanir">
+            <Container>
                     <div className="main-box-marketing">
 
                         <div className="marketing-tital">
@@ -55,18 +66,21 @@ const Marketing = () => {
                             <div className="Marketing-part-1">
                                 <div className="Marketing-box-1">
 
-                                    <div className="Marketing-card m1">
+                                    <div className="Marketing-card m1" onClick={click1}>
                                         <img src={card1} alt="" className='noh' />
                                         <img src={cardh1} alt="" className='yesh' />
                                     </div>
-                                    <div className="Marketing-card m2">
+
+                                    <div className="Marketing-card m2" onClick={click2}>
                                         <img src={card2} alt="" className='noh' />
                                         <img src={cardh2} alt="" className='yesh' />
                                     </div>
-                                    <div className="Marketing-card m2">
+
+                                    <div className="Marketing-card m2" onClick={click3}>
                                         <img src={card3} alt="" className='noh' />
                                         <img src={cardh3} alt="" className='yesh' />
                                     </div>
+
                                     <div className="Marketing-card m1">
                                         <img src={card4} alt="" className='noh' />
                                         <img src={cardh4} alt="" className='yesh' />
@@ -132,7 +146,7 @@ const Marketing = () => {
                         </div>
 
                     </div>
-                </div>
+                    </Container>
             </section>
 
 

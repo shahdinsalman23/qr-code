@@ -2,13 +2,32 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { IoIosStar } from "react-icons/io";
 import { PiCurrencyCircleDollarBold } from "react-icons/pi";
+import das from '../img/das.png';
+import error from '../img/error.png';
 
 const Footer = () => {
     return (
         <>
 
+<section className='Days'>
+      <Container>
+          <div className="main-Days">
+            <div className="Days-tital">
+              <h2>Try our QR code generator for 7 <br />days free.</h2>
+              <img src={error} alt="" />
+              <button>Register now</button>
+            </div>
+
+            <div className="days-imger">
+              <img src={das} alt="" />
+            </div>
+          </div>
+          </Container>
+      </section>
+
             <div className="qrfy_google_box">
                 <Container>
+
                     <Row>
                         <Col lg={12}>
                             <div className="footer_qr_google">

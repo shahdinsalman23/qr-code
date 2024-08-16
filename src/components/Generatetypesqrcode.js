@@ -20,13 +20,13 @@ const Generatetypesqrcode = () => {
       <section className="generate_different_typeqrcode">
         <Container>
           <Row>
-            <Col lg={12}>
+            <Col lg={12} className='p-0'>
               <div className="generate_qrcode_head">
                 <h3>Generate different types of QR Codes</h3>
                 <p>QR codes can hold a large amount of content and at QRfy, we offer them </p>
               </div>
             </Col>
-            <Col lg={12}>
+            <Col lg={12} className='p-0'>
               {/* <ul className='list_icon_container'>
                 <li>
                   <div className="list_icon_imgtxt">
