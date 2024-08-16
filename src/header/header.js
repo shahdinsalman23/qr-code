@@ -8,9 +8,14 @@ import { baseurl } from "../baseurl";
 import { GoogleLogin } from "@react-oauth/google";
 import SignUp from "../login/signup";
 import Login from "../login/login";
-import logo1 from "../img/QRFY_logo.svg";
+import logo1 from "../img/head-log.svg";
 
 const Header = () => {
+
+
+
+
+  
   const [showMenu, setShowMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(false); // Track if the screen is mobile or not
   const [showsignup, setshowsignup] = useState(true);
@@ -149,6 +154,14 @@ const Header = () => {
   const home = () => {
     navigate("/");
   };
+
+  const login = () => {
+    navigate("/login");
+  };
+
+  const sigup = () => {
+    navigate("/signup");
+  };
   return (
     <>
       <header className="hero-header">
@@ -220,11 +233,11 @@ const Header = () => {
 
 
 
-            <button className="Register">
+            <button className="Register" onClick={sigup}>
               Register
             </button>
 
-            <button className="Login">
+            <button className="Login" onClick={login}>
               Log In
             </button>
             {

@@ -86,7 +86,7 @@ header.hero-header {
 
 
 .header-btn-box button {
-  color: #1D59F9;
+  color: #2947c7;
   font-family: sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -247,7 +247,7 @@ span.icon-hero img {
 }
 
 .tab-box-hero .react-tabs__tab--selected {
-  border: 2px solid #1D59F9;
+  border: 2px solid #2947c7;
 }
 
 .Website-url-box {
@@ -368,6 +368,7 @@ span.icon-hero img {
 
 .qr-tab-btn .react-tabs__tab--selected button {
   color: #1d59f9;
+  color: #2947c7;
 }
 
 
@@ -545,7 +546,7 @@ button.see-all-btn {
   background: #FFF;
   width: 15%;
   padding: 12px 0px 12px 12px;
-  color: #1d59f9;
+  color: #2947c7;
   font-family: sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -578,7 +579,7 @@ button {
   --s-xsmall: 0.625em;
   --s-small: 1.2em;
   --border-width: 1px;
-  --c-primary: #1d59f9;
+  --c-primary: #2947c7;
   --c-primary-20-percent-opacity: #1d58f948;
   --c-primary-10-percent-opacity: #1d58f948;
   --t-base: 0.4s;
@@ -683,6 +684,9 @@ button {
 .checkbox-wrapper-33 .checkbox__trigger:focus+.checkbox__symbol {
   box-shadow: 0 0 0 0.25em var(--c-primary-20-percent-opacity);
 }
+h4.hello-style {
+  padding-bottom: 0px !important;
+}
 
 @-webkit-keyframes ripple-33 {
   from {
@@ -721,6 +725,13 @@ button {
   width: 20%;
 }
 
+.new-span {
+    color: #220E27;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    padding-bottom: 30px;
+}
 .selet-hero select {
   width: 100%;
   border-radius: 4px;
@@ -844,8 +855,8 @@ button {
 
 .PDF-box button {
   color: #FFFFFF;
-  background-color: #1D59F9;
-  border: 1px solid #1D59F9;
+  background-color: #2947c7;
+  border: 1px solid #2947c7;
   padding: 12px 50px;
   border-radius: 50px;
   font-size: 12px;
@@ -855,7 +866,7 @@ button {
 
 .PDF-box button:hover {
   background: transparent;
-  color: #1d59f9;
+  color: #2947c7;
 }
 
 .Part-2-card {
@@ -936,8 +947,8 @@ button {
 }
 
 .hero-Download-box button:hover {
-  background-color: #1d59f9;
-  border: 1px solid #1d59f9;
+  background-color: #2947c7;
+  border: 1px solid #2947c7;
   color: #fff;
 }
 
@@ -1168,35 +1179,44 @@ ul.list_icon_container {
 }
 
 .slider_mob_textbox a {
-  color: #FFF;
+  color: #FFF !important;
   font-family: Lato;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 31.5px;
   border-radius: 28px;
-  background: #1D59F9;
+  background: #2947c7;
   padding: 15px 40px;
   transition: all .6s ease;
-  border: 1px solid #1D59F9;
+  border: 1px solid #2947c7;
+  cursor: pointer;
 }
 
 
 .slider_mob_textbox a:hover {
   background-color: transparent;
-  border-color: #1D59F9;
-  color: #1D59F9;
+  border-color: #2947c7;
+  color: #2947c7 !important;
+}
+
+.frame_under_tab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 
 
 .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-active.swiper-slide-thumb-active .list_icon_imgtxt {
   border-color: #1D59F9;
+  border-color: #2947c7;
 }
 
 
 .mySwiper .swiper-slide-thumb-active .list_icon_imgtxt {
   border-color: #1D59F9;
+  border-color: #2947c7;
 }
 
 .mySwiper .swiper-slide {
@@ -1210,7 +1230,124 @@ ul.list_icon_container {
   overflow-y: scroll;
   transform: translate3d(0.35px, 0px, 0px) !important;
 }
+section.Plans {
+  width: 100%;
+  padding: 120px;
+}
 
+.main-Plans {
+  width: 100%;
+}
+
+.Plans-tital {
+  width: 100%;
+}
+
+.Plans-tital h2 {
+  font-size: 44px;
+  line-height: 72px;
+  padding-bottom: 12px;
+  color: #000;
+  text-align: center;
+}
+
+p.para-tital-1 {
+  color: rgb(104, 103, 108);
+  margin: 0px auto;
+  font-size: 16px;
+  max-width: 560px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+}
+
+.Plans-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Plans-card {
+  width: 32%;
+  padding: 26px 24px 32px;
+  position: relative;
+  box-shadow: 0px 4px 6px #CDD1E0;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Plans-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0px;
+  color: #220E27;
+}
+
+.Plans-card  h2 {
+  color: #220E27;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 28px;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+.Plans-card span {
+  display: flex;
+  gap: 5px;
+  padding-top: 21px;
+}
+
+.Plans-card span p {
+  color: #7B777C;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0px;
+}
+
+.Plans-card a {
+  color: #7B777C;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 24px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.Plans-card button {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 8px 16px;
+  position: relative;
+  font-size: 18px;
+  color: #1D59F9;
+  border: 2px solid #1D59F9;
+  box-shadow: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  line-height: 1.75;
+  white-space: nowrap;
+  border-radius: 28px;
+  text-transform: none;
+  width: 100%;
+  background-color: #fff;
+}
+
+
+
+p.para-tital-2 {
+  margin: 0px;
+  text-align: center;
+  padding-top: 40px;
+}
 /************** Swiper Slider CSS End **********/
 
 
@@ -1258,6 +1395,8 @@ footer.footer_main {
 .hero-Download-box button:active {
   background-color: #1d59f9;
   border: 1px solid #1d59f9;
+  background-color: #2947c7;
+  border: 1px solid #2947c7;
   color: #fff;
 }
 
@@ -1564,8 +1703,181 @@ span.no3 {
 /*********** Footer CSS End ****************/
 
 
+/*********** Generate types inner page CSS Start ****************/
+
+.typepg_breadscrum {
+  margin-top: 23px;
+}
+
+.typepg_breadscrum a {
+  color: #96949C;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.type_first_sec_txt h6 {
+  color: #68676C;
+  font-size: 20px;
+  margin-top: 28px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 28px;
+}
+
+
+.type_first_sec_txt h2 {
+  font-size: 68px;
+  line-height: 76px;
+  color: #220E27;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.type_first_sec_txt h2 span {
+  color: #2947c7;
+}
+
+
+.type_first_sec_txt p {
+  margin-top: 28px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #68676C;
+  margin-bottom: 52px;
+}
+
+.type_first_sec_txt a {
+  background: #2947c7;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 28px;
+  line-height: 45px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+section.type_first_sec {
+  background: linear-gradient(332deg, rgb(238, 85, 88) 0%, rgba(238, 85, 88, 0) 58.35%);
+  padding: 80px 0px 30px 0px;
+}
+
+.website_qrcode_mob {
+  background: url(../img/cell-phone.webp) no-repeat top center;
+  width: 360px;
+  height: 724.3px;
+  background-size: 360px 724.3px;
+  position: relative;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.website_qrcode_mob img {
+  padding: 20px 0px 0px 20px;
+  border-radius: 70px 70px;
+  height: 98%;
+  width: 95%;
+}
+
+/*********** Generate types inner page CSS End ****************/
+
+
+/*********** Second Type Sec CSS Start ****************/
+
+section.second_type_sec {
+  padding: 110px 0px 140px 0px;
+}
+
+.second_type_sec_head {
+  text-align: center;
+  margin: 0px 0px 36px 0px;
+}
+
+.second_type_sec_head h2 {
+  line-height: 48px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.second_type_sec_head p {
+  font-size: 20px;
+  line-height: 34px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+/*********** Second Type Sec CSS End ****************/
+
+
+/*********** Three Type Sec CSS Start ****************/
+
+
+.three_types_sec_head h4 {
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 800;
+  color: #220E27;
+  margin-bottom: 20px;
+}
+
+
+.three_types_sec_head {
+    text-align: center;
+}
+
+.three_types_sec_head p {
+  font-size: 22px;
+  line-height: 26px;
+  color: #68676C;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.create_type_img img {
+  width: 100%;
+  padding: 0px 80px;
+}
+
+section.create_type_sec {
+  padding: 80px 0px;
+}
+
+.create_type_txt h6 {
+  color: #2947c7;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.create_type_txt h3 {
+  color: #220E27;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.create_type_txt p {
+  color: #68676C;
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+
+/*********** Three Type Sec CSS End ****************/
+
 
 /********************* Shahdin CSS ENd ***********************/
+
+
+
+
+
 .gr-card-tital {
   width: 40%;
 }
@@ -1620,8 +1932,8 @@ span.no3 {
 
 .Generator-gr-btn button {
   border-radius: 28px;
-  background: #1D59F9;
-  border: 1px solid #1D59F9;
+  background: #2947c7;
+  border: 1px solid #2947c7;
   padding: 12px 45px;
   color: #FFF;
   font-family: sans-serif;
@@ -1635,7 +1947,7 @@ span.no3 {
 
 .Generator-gr-btn button:hover {
   background: transparent;
-  color: #1d59f9;
+  color: #2947c7;
 }
 
 .main-Marketing {
@@ -1735,8 +2047,8 @@ img.yesh {
 .marketing-btn button {
   padding: 12px 36px;
   border-radius: 28px;
-  background: #1D59F9;
-  border: 1px solid #1D59F9;
+  background: #2947c7;
+  border: 1px solid #2947c7;
   color: #FFF;
   font-family: sans-serif;
   font-size: 18px;
@@ -1749,7 +2061,7 @@ img.yesh {
 
 .marketing-btn button:hover {
   background-color: transparent;
-  color: #1D59F9;
+  color: #2947c7;
 }
 
 section.Marketing {
@@ -1873,6 +2185,7 @@ section.Everything {
 
 .Everything-faq-box .accordion__panel span {
   color: #1D59F9;
+  color: #2947c7;
 }
 
 
@@ -1938,6 +2251,8 @@ section.Leave {
 .Leave-tab-box .react-tabs__tab--selected {
   border: 2px solid #1D59F9;
   color: #1D59F9;
+  border: 2px solid #2947c7;
+  color: #2947c7;
 }
 
 .Leave-tab-boxing {
@@ -2001,9 +2316,9 @@ section.Leave {
 
 .know-box button {
   border-radius: 28px;
-  background: #1D59F9;
+  background: #2947c7;
   padding: 12px 28px;
-  border: 1px solid #1d59f9;
+  border: 1px solid #2947c7;
   color: #FFF;
   font-family: sans-serif;
   font-size: 18px;
@@ -2018,6 +2333,7 @@ section.Leave {
 .know-box button:hover {
   background-color: transparent;
   color: #1D59F9;
+  color: #2947c7;
 }
 
 .main-know-box {
@@ -2028,7 +2344,7 @@ section.Leave {
 section.Days {
   width: 100%;
   padding: 105px 0px 45px 0px;
-  background: linear-gradient(0deg, #220E27 15.06%, #1D59F9 100%);
+  background: linear-gradient(0deg, #220E27 15.06%, #2947c7 100%);
 }
 
 .main-Days {
@@ -2083,6 +2399,7 @@ section.Days {
 .Days-tital button:hover {
   background-color: #fff;
   color: #1D59F9;
+  color: #2947c7;
 }
 
 .Days-tital img {
@@ -2123,8 +2440,8 @@ section.Days {
 
 .change-click-btn button {
   width: 14%;
-  color: #1D59F9;
-  border: 2px solid #1D59F9;
+  color: #2947c7;
+  border: 2px solid #2947c7;
   box-shadow: none;
   background-color: #FFFFFF;
   padding: 12px 0px;
@@ -2165,8 +2482,8 @@ section.Days {
 
 .change-click-btn button {
   width: 14%;
-  color: #1D59F9;
-  border: 2px solid #1D59F9;
+  color: #2947c7;
+  border: 2px solid #2947c7;
   box-shadow: none;
   background-color: #FFFFFF;
   padding: 12px 0px;
@@ -2271,6 +2588,7 @@ section.Days {
 
 .checkbox-wrapper-51 input[type="checkbox"]:checked+.toggle:before {
   background: #1D59F9;
+  background: #2947c7;
 }
 
 .checkbox-wrapper-51 input[type="checkbox"]:checked+.toggle span {
@@ -2305,14 +2623,14 @@ section.Days {
 button.add-file-btn svg {
   width: 24px;
   height: 24px;
-  fill: #1d59f9;
+  fill: #2947c7;
   margin-right: 5px;
 }
 
 button.add-file-btn {
   width: 18%;
   background-color: transparent;
-  border: 1px solid #1d59f9;
+  border: 1px solid #2947c7;
   padding: 14px 16px;
   position: relative;
   font-size: 18px;
@@ -2325,7 +2643,7 @@ button.add-file-btn {
   white-space: nowrap;
   border-radius: 28px;
   text-transform: none;
-  color: #1d59f9;
+  color: #2947c7;
   margin-bottom: 15px;
 }
 
@@ -2537,13 +2855,17 @@ section.Benefits {
   color: #220E27;
   font-size: 40px;
   font-weight: 700;
-  padding-bottom: 28px;
+  padding-bottom: 28px; 
+  margin: 0px;
+
 }
 
 .Benefits-box {
   width: 100%;
 }
-
+p.padding-top {
+  padding-top: 30px;
+}
 .Benefits-box p {
   margin: 0px;
   color: #68676C;
@@ -2558,7 +2880,13 @@ section.Benefits {
 .Benefits-box p span {
   font-weight: bold;
 }
-
+.main-Benefits-gap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
 .Benefits-box p::before {
   top: 30px;
   left: -40px;
@@ -4329,5 +4657,142 @@ margin-bottom: 20px;
   box-shadow: 0px 4px 4px 0px #96949C;
   margin-bottom: 20px;
   /* add this to allow accordion items to expand */
-  overflow: hidden;
+  overflow: hidden;}
+p.hello-space-p {
+  padding-top: 30px;
+}
+
+.main-Dynamic h5 {
+  color: #220E27;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  padding-top: 35px;
+} 
+
+
+.gap-px {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+p.padding-name {
+  padding: 0px !important;
+}
+
+
+section.login {
+  width: 100%;
+}
+
+.main-login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  HEIGHT: 100VH;
+}
+
+
+
+.part-login-1 {
+  width: 42%;
+}
+
+.part-login-2 {
+  width: 50%;
+  HEIGHT: 100%;
+}
+
+.part-login-2 img {
+  width: 100%;
+  HEIGHT: 100%;
+}
+
+.part-login-1 form {
+  width: 100%;
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.part-login-1 form  h2 {
+  color: #220E27;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 75% */
+  margin: 0px;
+}
+
+.part-login-1 form p {
+  margin: 0px;
+  color: #68676C;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding-top: 30px;
+}
+
+.login-input-group {
+  width: 100%;
+  padding: 25px 0px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.login-input-group label {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.login-input-group input {
+  border-radius: 10px;
+  border: 1px solid #000;
+  outline: none;
+  width: 100%;
+  padding: 14px;
+}
+
+.part-login-1 form span {
+  width: 100%;
+  color: #68676C;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px; /* 116.667% */
+}
+
+.part-login-1 form span a {
+  color: #2947C7 !important;
+  cursor: pointer;
+}
+
+.part-login-1 form button {
+  background-color: #2947c7;
+  border: 1px solid #2947c7;
+  color: #FFF;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31.5px; /* 175% */
+  padding: 8px 60px;
+  border-radius: 35px;
+  margin: 20px 0px;
 }

@@ -29,9 +29,16 @@ import bussinessInnerimg from "../../img/mockup_business_preview.webp"
 import menuInnerimg from "../../img/mockup_menu_preview.webp"
 import couponsInnerimg from "../../img/mockup_coupon_preview.webp"
 import mp3Innering from "../../img/mockup_mp3_preview.png"
+import { useNavigate } from "react-router-dom";
 
 
 export default function Qrcodeslider() {
+
+    const navigate = useNavigate();
+    const typelink = () => {
+        navigate("/Qrtypeone");
+    }
+
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     return (
@@ -171,7 +178,7 @@ export default function Qrcodeslider() {
                                     website in the blink of an eye. The easier it is to access,
                                     the greater the chances of increasing traffic to your website.
                                 </p>
-                                <a href="#">Generate QR Code for Website</a>
+                                <a onClick={typelink}>Generate QR Code for Website</a>
                             </div>
                         </Col>
                     </Row>

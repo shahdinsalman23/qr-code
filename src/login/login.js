@@ -1,130 +1,72 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import { baseurl } from "../baseurl";
-import { ToastContainer, toast } from "react-toastify";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import Generatetypesqrcode from '../components/Generatetypesqrcode';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { baseurl } from '../baseurl';
+import login from '../img/login-site.png';
+
+
+
+
+
 
 const Login = () => {
-  const [show, setshow] = useState(false);
-  const [email,setemail]=useState()
-  const [password,setpassword]=useState()
-  const navigate = useNavigate()
 
-  const toggle = () => {
-    setshow(true);
+
+  const navigate = useNavigate();
+
+
+
+
+  const sigup = () => {
+    navigate("/signup");
   };
 
-  const toggle2 = () => {
-    setshow(false);
-  };
 
-
-  const Login=(e)=>{
-
-    e.preventDefault()
-
-    const formData={
-
-      
-      email:email,
-      password:password
-    }
-
-
-
-
-    axios.post(`${baseurl}/login`,formData)
-    .then((res)=>{
-      console.log(res.data.userRecord.sub)
-
-      localStorage.setItem("userid", '"'+res.data.userRecord.sub+'"');
-
-      navigate('/dashboard')
-    })
-    .catch((error)=>{
-      console.log(error)
-
-      if (error.response && error.response.data && error.response.data.error) {
-        toast.error(error.response.data.error);
-      } else {
-        toast.error('An unexpected error occurred. Please try again.');
-      }
-    })
-
-
-
-
-
-  }
-  
 
   return (
+
     <>
-    
  
+<section className='login'>
+  <div className="main-login">
+    <div className="part-login-1">
+      <form action="">
+        <h2>Login</h2>
+        <p>Enter with your networks or complete your data</p>
 
-      <button onClick={toggle} className="Login">
-      Log In
-      </button>
+        <div className="login-input-group">
+          <label htmlFor="">Email*</label>
+          <input type="email" />
+        </div>
 
-      {
-        show && 
-      <div class="login">
-        <form onSubmit={Login}>
-          <div class="form-head">
-            <p>Login</p>
-            <svg onClick={toggle2}
-              width="17"
-              height="17"
-              viewBox="0 0 17 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 1L16 16"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-              <path
-                d="M16 1L1 16"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
+        <div className="login-input-group">
+          <label htmlFor="">Password*</label>
+          <input type="Password" />
+        </div>
 
-          <div class="form-body">
-            <div class="input-group">
-              <label for="">
-                Email <span>*</span>
-              </label>
-              <input placeholder="Hello@example.com" type="text"  onChange={(e)=>setemail(e.target.value)}/>
-            </div>
 
-            <div class="input-group">
-              <label for="">
-                Password <span>*</span>
-              </label>
-              <input placeholder="Your Password" type="text" onChange={(e)=>setpassword(e.target.value)} />
-              <div class="input-img">
-           
-              </div>
-              {/* <label for="">Forgot Password?</label> */}
-            </div>
+<span> Have you forgotten your password? <a>Click here</a></span>
 
-            <div class="form-btn-box">
-              <button>Log In</button>
- 
-            </div>
-          </div>
-        </form>
-      </div>
-      }
+<button>Log In</button>
+
+
+<span> Don't have an account? <a onClick={sigup}>Create an account</a></span>
+
+      </form>
+    </div>
+    <div className="part-login-2">
+<img src={login} alt="" />
+    </div>
+  </div>
+</section>
+
+
 
     </>
-  );
-};
+  )
 
-export default Login;
+}
+
+export default Login

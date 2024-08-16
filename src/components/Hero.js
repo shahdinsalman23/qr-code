@@ -116,7 +116,6 @@ const Hero = () => {
                                                             <div className="qr-tab-box">
                                                                 <TabPanel>
                                                                     <div className="ar-bar-box">
-
                                                                         <div className=" qr-card none-qr-card">
                                                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                                                                 <path d="M12 0.0200195C18.6278 0.0200195 24 5.39227 24 12.02C24 18.6478 18.6278 24.02 12 24.02C5.37225 24.02 0 18.6478 0 12.02C0 5.39227 5.37225 0.0200195 12 0.0200195ZM1.3335 12.02C1.3335 17.9113 6.10875 22.6865 12 22.6865C14.7022 22.6865 17.1705 21.6815 19.05 20.0248L4.03725 4.92277C2.35575 6.80827 1.3335 9.29452 1.3335 12.02ZM12 1.35352C9.3135 1.35352 6.8595 2.34652 4.98375 3.98527L19.9928 19.0835C21.6562 17.2025 22.6665 14.729 22.6665 12.02C22.6665 6.12877 17.8913 1.35352 12 1.35352Z" fill="black" />
@@ -222,7 +221,6 @@ const Hero = () => {
                                             <TabPanel>
                                                 <div className="Website-url-box">
                                                     <h2>Message *</h2>
-
                                                     <textarea name="" id="" placeholder='Enter some text…'></textarea>
                                                 </div>
 
