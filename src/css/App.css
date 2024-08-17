@@ -3052,9 +3052,11 @@ p.Statistics span::before {
 
 .sidebar-nav-ul .menu-item:hover,
 .sidebar-nav-ul .menu-item.active {
-  background-color: #007bff; /* Blue color for active tab */
+  background: rgba(243, 246, 255, 1);
   border-radius: 4px; /* Optional: for rounded corners */
+  border-right: 5px solid rgba(41, 71, 199, 1);
 }
+
 
 .sidebar-nav-ul .menu-item.active .menu-link {
   color: #000; /* White text on active tab */
