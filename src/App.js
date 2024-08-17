@@ -13,6 +13,7 @@ import Login from "./login/login";
 import Editinginner from "./marketing-page/Editinginner";
 import Dynamicinner from "./marketing-page/Dynamicinner";
 import Collaborating from "./marketing-page/Collaboratinginner";
+import Qrtypeone from "./generate-qr-types/qr-type-1/Qrtypeone";
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/Collaborating" exact element={<Collaborating/>} />
           <Route path="/signup" exact element={<SignUp />} />
           <Route path="/login" exact element={<Login />} />
+          <Route path="/qrtypeone" exact element={<Qrtypeone />} />
         </Routes>
       </Router>
     </Provider>

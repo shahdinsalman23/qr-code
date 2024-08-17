@@ -7,40 +7,32 @@ import "swiper/css/thumbs";
 
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { Col, Row } from "react-bootstrap";
-import mobinnerimg from "../../img/mob_inner_img.png";
-import websiteicon from "../../img/website_icon_img.png";
-import pdficon from "../../img/pdf_icon_img.png";
-import vCardicon from "../../img/vCard_icon_img.png";
-import imageicon from "../../img/image_icon_img.png";
-import texticon from "../../img/text_icon_img.png";
-import videoicon from "../../img/video_icon_img.png";
-import listlinksicon from "../../img/listlinks_icon_img.png";
-import bussinessicon from "../../img/bussiness_icon_img.png";
-import menuicon from "../../img/menu_icon_img.png";
-import coupenicon from "../../img/coupens_icon_img.png";
-import mp3icon from "../../img/mp3_icon_img.png";
-import pdfinnerimg from "../../img/mockup_pdf_preview.webp"
-import vCardinnerimg from "../../img/mockup_vcard-plus_preview.webp"
-import imagesinnerimg from "../../img/mockup_images_preview.webp"
-import textInnerimg from "../../img/text_mockeup.png"
-import videoInnerimg from "../../img/mockup_video_preview.webp"
-import listlinkinner from "../../img/mockup_link-list_preview.webp"
-import bussinessInnerimg from "../../img/mockup_business_preview.webp"
-import menuInnerimg from "../../img/mockup_menu_preview.webp"
-import couponsInnerimg from "../../img/mockup_coupon_preview.webp"
-import mp3Innering from "../../img/mockup_mp3_preview.png"
-import { useNavigate } from "react-router-dom";
+import mobinnerimg from "../../../../img/mob_inner_img.png";
+import websiteicon from "../../../../img/website_icon_img.png";
+import pdficon from "../../../../img/pdf_icon_img.png";
+import vCardicon from "../../../../img/vCard_icon_img.png";
+import imageicon from "../../../../img/image_icon_img.png";
+import texticon from "../../../../img/text_icon_img.png";
+import videoicon from "../../../../img/video_icon_img.png";
+import listlinksicon from "../../../../img/listlinks_icon_img.png";
+import bussinessicon from "../../../../img/bussiness_icon_img.png";
+import menuicon from "../../../../img/menu_icon_img.png";
+import coupenicon from "../../../../img/coupens_icon_img.png";
+import mp3icon from "../../../../img/mp3_icon_img.png";
+import pdfinnerimg from "../../../../img/mockup_pdf_preview.webp"
+import vCardinnerimg from "../../../../img/mockup_vcard-plus_preview.webp"
+import imagesinnerimg from "../../../../img/mockup_images_preview.webp"
+import textInnerimg from "../../../../img/text_mockeup.png"
+import videoInnerimg from "../../../../img/mockup_video_preview.webp"
+import listlinkinner from "../../../../img/mockup_link-list_preview.webp"
+import bussinessInnerimg from "../../../../img/mockup_business_preview.webp"
+import menuInnerimg from "../../../../img/mockup_menu_preview.webp"
+import couponsInnerimg from "../../../../img/mockup_coupon_preview.webp"
+import mp3Innering from "../../../../img/mockup_mp3_preview.png"
 
 
-export default function Qrcodeslider() {
-
-    const navigate = useNavigate();
-    const typelink = () => {
-        navigate("/Qrtypeone");
-    }
-
+const Secondtypeslider = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
     return (
         <>
             <Swiper
@@ -170,7 +162,7 @@ export default function Qrcodeslider() {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div className="slider_mob_textbox">
                                 <h3>Website</h3>
                                 <p>
@@ -178,14 +170,14 @@ export default function Qrcodeslider() {
                                     website in the blink of an eye. The easier it is to access,
                                     the greater the chances of increasing traffic to your website.
                                 </p>
-                                <a onClick={typelink}>Generate QR Code for Website</a>
+                                <a href="#">Generate QR Code for Website</a>
                             </div>
                         </Col>
                     </Row>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Row>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div
                                 className="slider_mob_mainbox"
                                 style={{
@@ -198,7 +190,7 @@ export default function Qrcodeslider() {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div className="slider_mob_textbox">
                                 <h3>PDF</h3>
                                 <p>
@@ -213,7 +205,7 @@ export default function Qrcodeslider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Row>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div
                                 className="slider_mob_mainbox"
                                 style={{
@@ -226,7 +218,7 @@ export default function Qrcodeslider() {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div className="slider_mob_textbox">
                                 <h3>vCard Plus</h3>
                                 <p>
@@ -241,7 +233,7 @@ export default function Qrcodeslider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Row>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div
                                 className="slider_mob_mainbox"
                                 style={{
@@ -254,7 +246,7 @@ export default function Qrcodeslider() {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div className="slider_mob_textbox">
                                 <h3>Images</h3>
                                 <p>
@@ -269,7 +261,7 @@ export default function Qrcodeslider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Row>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div
                                 className="slider_mob_mainbox"
                                 style={{
@@ -282,7 +274,7 @@ export default function Qrcodeslider() {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div className="slider_mob_textbox">
                                 <h3>Text</h3>
                                 <p>
@@ -297,7 +289,7 @@ export default function Qrcodeslider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Row>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div
                                 className="slider_mob_mainbox"
                                 style={{
@@ -310,7 +302,7 @@ export default function Qrcodeslider() {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div className="slider_mob_textbox">
                                 <h3>Video</h3>
                                 <p>
@@ -325,7 +317,7 @@ export default function Qrcodeslider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Row>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div
                                 className="slider_mob_mainbox"
                                 style={{
@@ -338,7 +330,7 @@ export default function Qrcodeslider() {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div className="slider_mob_textbox">
                                 <h3>List of links</h3>
                                 <p>
@@ -353,7 +345,7 @@ export default function Qrcodeslider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Row>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div
                                 className="slider_mob_mainbox"
                                 style={{
@@ -366,7 +358,7 @@ export default function Qrcodeslider() {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div className="slider_mob_textbox">
                                 <h3>Business</h3>
                                 <p>
@@ -381,7 +373,7 @@ export default function Qrcodeslider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Row>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div
                                 className="slider_mob_mainbox"
                                 style={{
@@ -394,7 +386,7 @@ export default function Qrcodeslider() {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div className="slider_mob_textbox">
                                 <h3>Menu</h3>
                                 <p>
@@ -409,7 +401,7 @@ export default function Qrcodeslider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Row>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div
                                 className="slider_mob_mainbox"
                                 style={{
@@ -422,7 +414,7 @@ export default function Qrcodeslider() {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div className="slider_mob_textbox">
                                 <h3>Coupons</h3>
                                 <p>
@@ -437,7 +429,7 @@ export default function Qrcodeslider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Row>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div
                                 className="slider_mob_mainbox"
                                 style={{
@@ -450,7 +442,7 @@ export default function Qrcodeslider() {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6}  className="p-0">
+                        <Col lg={6} className="p-0">
                             <div className="slider_mob_textbox">
                                 <h3>MP3</h3>
                                 <p>
@@ -465,6 +457,7 @@ export default function Qrcodeslider() {
                 </SwiperSlide>
             </Swiper>
         </>
-    );
+    )
 }
 
+export default Secondtypeslider
