@@ -10,6 +10,7 @@ import qr from '../../img/Navbarqr.png';
 import Templete from '../../img/navbarTemplete.png';
 import Close from '../../img/Close.png';
 import bulkNavbar from '../../img/Navbarbulk qr.png';
+import Clock from '../../img/timeNavbar.png';
 
 const Navbar = ({ onToggle }) => {
     const [isOpen, setIsOpen] = useState(true);
@@ -64,7 +65,7 @@ const Navbar = ({ onToggle }) => {
                             <div className="Navbar-icons">
                                 <img src={Templete} alt="template" />
                             </div>
-                            <Link to="/templates" className="menu-link">Templates</Link>
+                            <Link to="/DashboardTemplates" className="menu-link">Templates</Link>
                         </li>
                         <li className="menu-item">
                             <div className="Navbar-icons">
@@ -81,7 +82,7 @@ const Navbar = ({ onToggle }) => {
 
                         <div className="Navbar--end">
                             <div className="Navbar--end--text">
-                                <img src={Qrcode} alt="time" />
+                                <img src={Clock} alt="time" />
                                 <h3>7 days remaining</h3>
                             </div>
                             <div className="Navbar--end--button">

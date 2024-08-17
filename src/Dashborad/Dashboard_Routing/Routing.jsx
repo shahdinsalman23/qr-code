@@ -4,7 +4,6 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import NewQR from '../Dashborad_Pages/NewQR';
 import MyQRCodes from '../Dashborad_Pages/MyQRCodes';
 import Stats from '../Dashborad_Pages/Stats';
-import Templates from '../Dashborad_Pages/Templates';
 import MyDomains from '../Dashborad_Pages/MyDomains';
 import PlansAndPayments from '../Dashborad_Pages/PlansAndPayments';
 import Navbar from '../DashboardNav/Navbar';
@@ -13,6 +12,7 @@ import Header from '../DashboardNav/Header';
 import TempleteHeader from '../DashboardNav/TempleteHeader';
 import InnerHeaderWebsite from '../DashboardNav/InnerHeaderWebsite';
 import NewQR_Website from '../Dashboard_SubPages/NewQR_Website';
+import DashboardTemplates from '../Dashborad_Pages/DashboardTemplates';
 
 function Links() {
     const location = useLocation();
@@ -23,7 +23,7 @@ function Links() {
         '/BulkQr', 
         '/my-qr-codes', 
         '/stats', 
-        '/templates', 
+        '/DashboardTemplates', 
         '/my-domains', 
         '/plans-and-payments',
         '/website'
@@ -37,7 +37,7 @@ function Links() {
     const restheaderOnlyRoutes = [
         '/my-qr-codes', 
         '/stats',
-        '/templates',
+        '/DashboardTemplates',
         '/my-domains',
         '/plans-and-payments'
     ];
@@ -68,7 +68,7 @@ function Links() {
                     <Route path="/BulkQr" element={<BulkQr />} />
                     <Route path="/my-qr-codes" element={<MyQRCodes />} />
                     <Route path="/stats" element={<Stats />} />
-                    <Route path="/templates" element={<Templates />} />
+                    <Route path="/DashboardTemplates" element={<DashboardTemplates />} />
                     <Route path="/my-domains" element={<MyDomains />} />
                     <Route path="/plans-and-payments" element={<PlansAndPayments />} />
                     <Route path="/website" element={<NewQR_Website />} />

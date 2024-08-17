@@ -3017,7 +3017,7 @@ p.Statistics span::before {
 
 .sidebar-nav li {
   padding: 15px;
-  text-align: center;
+  text-align: left;
 }
 
 .sidebar-nav a {
@@ -3033,6 +3033,37 @@ p.Statistics span::before {
   text-align: left;
 }
 
+.sidebar-nav-ul .menu-item {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-nav-ul .menu-item .menu-link {
+  text-decoration: none;
+  color: black; /* Adjust based on your theme */
+  margin-left: 0px;
+  display: block;
+  width: 100%;
+}
+
+.sidebar-nav-ul .menu-item:hover,
+.sidebar-nav-ul .menu-item.active {
+  background-color: #007bff; /* Blue color for active tab */
+  border-radius: 4px; /* Optional: for rounded corners */
+}
+
+.sidebar-nav-ul .menu-item.active .menu-link {
+  color: #000; /* White text on active tab */
+}
+
+.sidebar-nav-ul .menu-item .Navbar-icons img {
+  width: 24px; /* Adjust size based on your design */
+  height: 24px;
+}
 
 
 .sidebar.closed+.content {
@@ -3261,11 +3292,6 @@ p.Statistics span::before {
   border: none;
 }
 
-.menu-item {
-  display: flex;
-  align-items: center;
-  padding: 0px 20px;
-}
 
 .brand p {
   font-family: Lato;

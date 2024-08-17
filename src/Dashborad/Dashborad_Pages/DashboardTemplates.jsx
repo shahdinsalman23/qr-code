@@ -3,7 +3,7 @@ import React from 'react';
 import QRcode from '../../img/QRCODEbardcode.png';
 
 
-const Templates = () => {
+const DashboardTemplates = () => {
     return (
         <>
             <div className="MyTempletes">
@@ -28,4 +28,4 @@ const Templates = () => {
     );
 };
 
-export default Templates;
+export default DashboardTemplates;
