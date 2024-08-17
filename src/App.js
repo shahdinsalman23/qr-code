@@ -19,6 +19,7 @@ import Custom from "./marketing-page/Custom";
 import Password from "./marketing-page/Password";
 import Tracking from "./marketing-page/Tracking";
 import Signup from "./login/signup";
+import Qrtypeone from "./generate-qr-types/qr-type-1/Qrtypeone";
 
 
 
