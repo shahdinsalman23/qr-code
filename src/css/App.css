@@ -2941,13 +2941,44 @@ p.Statistics span::before {
 
 /* BASIT'S CSS */
 
+.sidebar {
+  width: 16%; /* Width when sidebar is open */
+  transition: width 0.3s ease;
+}
+
+.sidebar.closed {
+  width: 0; /* Width when sidebar is closed */
+  display: none;
+}
+
 .page-content {
-  width: 84%;
+  transition: width 0.3s ease;
   position: absolute;
   top: 0em;
   right: 0;
 }
 
+.page-content.with-sidebar {
+  width: 84%; /* Width when sidebar is open */
+}
+
+.page-content.full-width {
+  width: 100%; /* Full width when sidebar is closed */
+}
+
+.main-content {
+  display: flex;
+}
+
+.toggle-button {
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
 
 /* Variables Converted to Plain CSS */
 :root {
@@ -2959,7 +2990,7 @@ p.Statistics span::before {
 
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
 }
-
+/* 
 /* SIDEBAR */
 /* Sidebar.css */
 .sidebar {
@@ -2972,7 +3003,7 @@ p.Statistics span::before {
   z-index: 111111;
   transition: transform 0.3s ease;
   transform: translateX(0);
-}
+} */
 
 .sidebar.closed {
   transform: translateX(-100%);
