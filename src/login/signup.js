@@ -1,152 +1,87 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import { baseurl } from "../baseurl";
-import { ToastContainer, toast } from "react-toastify";
-
-const SignUp = () => {
-
-  const [username,setusername]=useState()
-  const [email,setemail]=useState()
-  const [password,setpassword]=useState()
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import Generatetypesqrcode from '../components/Generatetypesqrcode';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { baseurl } from '../baseurl';
+import login from '../img/login-site.png';
 
 
-  const [show, setshow] = useState(false);
 
-  const toggle = () => {
-    setshow(true);
+
+
+
+const Signup = () => {
+
+
+  const navigate = useNavigate();
+
+  const home = () => {
+    navigate("/");
   };
-  const toggle2 = () => {
-    setshow(false);
+
+  const logins = () => {
+    navigate("/login");
   };
 
-
-
-  const Signup=(e)=>{
-
-    e.preventDefault()
-
-    const formData={
-
-      username:username,
-      email:email,
-      password:password
-    }
-
-
-
-
-    axios.post(`${baseurl}/signup`,formData)
-    .then((res)=>{
-      console.log(res)
-
-      if(res.data.message="User created successfully")
-        {
-          toast.success("User Sign Up Successfully")
-
-          setTimeout(() => {
-            window.location.reload();
-          }, 1000);
-        }
-
-        
-       
-    })
-    .catch((error)=>{
-      console.log(error,"ts")
-
-      
-      if (error.response && error.response.data && error.response.data.error) {
-        toast.error(error.response.data.error);
-      } else {
-        toast.error('An unexpected error occurred. Please try again.');
-      }
-      
-    })
-
-
-
-
-
-  }
-
+  
 
 
 
   return (
+
     <>
-      {/* <ToastContainer/> */}
+ 
+<section className='login'>
+  <div className="main-login">
+    <div className="part-login-1">
+      <form action="">
+        <h2>Sign Up</h2>
+        <p>Enter with your networks or complete your data</p>
 
-      {/* <Header /> */}
+        <div className="login-input-group">
+          <label htmlFor="">Name*</label>
+          <input type="text" />
+        </div>
 
-      <button onClick={toggle} className="Register">
-      Register
-      </button>
+        <div className="login-input-group">
+          <label htmlFor="">Email*</label>
+          <input type="email" />
+        </div>
 
-      {
-        show && 
-      <div class="signup">
-        <form onSubmit={Signup}>
-          <div class="form-head">
-            <p>Sign Up</p>
-            <svg onClick={toggle2}
-              width="17"
-              height="17"
-              viewBox="0 0 17 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 1L16 16"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-              <path
-                d="M16 1L1 16"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
+        <div className="login-input-group">
+          <label htmlFor="">Password*</label>
+          <input type="Password" />
+        </div>
 
-          <div class="form-body">
-            <div class="input-group">
-              <label for="">
-                Full Name <span>*</span>
-              </label>
-              <input placeholder="Your Name" type="text"  onChange={(e)=>setusername(e.target.value)}/>
-            </div>
 
-            <div class="input-group">
-              <label for="">
-                Email <span>*</span>
-              </label>
-              <input placeholder="Your Email" type="text"  onChange={(e)=>setemail(e.target.value)}/>
-            </div>
+        
+        <div className="login-input-group">
+          <label htmlFor="">Confirm Password*</label>
+          <input type="Password" />
+        </div>
 
-            <div class="input-group">
-              <label for="">
-                Password <span>*</span>
-              </label>
-              <input placeholder="Your Password" type="text" onChange={(e)=>setpassword(e.target.value)} />
-              <div class="input-img">
-              </div>
-            </div>
 
-          
+<span> Have you forgotten your password?  <a>Click here</a></span>
 
-            <div class="form-btn-box">
-              <button>Sign Up</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      }
+<button>Sign Up</button>
+
+
+<span> Have an account? <a onClick={logins}>Login</a></span>
+
+      </form>
+    </div>
+    <div className="part-login-2">
+<img src={login} alt="" />
+    </div>
+  </div>
+</section>
+
+
 
     </>
-  );
-};
+  )
 
-export default SignUp;
+}
+
+export default Signup

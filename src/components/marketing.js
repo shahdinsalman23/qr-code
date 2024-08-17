@@ -50,6 +50,52 @@ const Marketing = () => {
       };
 
 
+      const click4 = () => {
+        navigate("/Varietyinner");
+      };
+
+
+      const click5 = () => {
+        navigate("/Analytics");
+      };
+
+
+      const click6 = () => {
+        navigate("/Facebook");
+      };
+
+      
+
+      const click7 = () => {
+        navigate("/Templates");
+      };
+
+
+
+      const click8 = () => {
+        navigate("/Static");
+      };
+
+
+      const click9 = () => {
+        navigate("/Bulk");
+      };
+      
+
+      const click10 = () => {
+        navigate("/Custom");
+      };
+
+
+      
+
+      const click11 = () => {
+        navigate("/Password");
+      };
+
+      const click12 = () => {
+        navigate("/Tracking");
+      };
 
 
     return (
@@ -81,13 +127,13 @@ const Marketing = () => {
                                         <img src={cardh3} alt="" className='yesh' />
                                     </div>
 
-                                    <div className="Marketing-card m1">
+                                    <div className="Marketing-card m1"  onClick={click4}>
                                         <img src={card4} alt="" className='noh' />
                                         <img src={cardh4} alt="" className='yesh' />
                                     </div>
                                 </div>
-                                <div className="Marketing-box-2">
-                                    <div className="Marketing-card mmain">
+                                <div className="Marketing-box-2" >
+                                    <div className="Marketing-card mmain" onClick={click5}>
                                         <img src={card5} alt="" className='noh' />
                                         <img src={cardh5} alt="" className='yesh' />
                                     </div>
@@ -96,7 +142,7 @@ const Marketing = () => {
                             <div className="Marketing-part-1">
 
                                 <div className="Marketing-box-2">
-                                    <div className="Marketing-card mmain">
+                                    <div className="Marketing-card mmain" onClick={click6}>
                                         <img src={card6} alt="" className='noh' />
                                         <img src={cardh6} alt="" className='yesh' />
                                     </div>
@@ -104,32 +150,32 @@ const Marketing = () => {
 
                                 <div className="Marketing-box-1">
 
-                                    <div className="Marketing-card m3">
+                                    <div className="Marketing-card m3"  onClick={click7}>
                                         <img src={card7} alt="" className='noh' />
                                         <img src={card7} alt="" className='yesh' />
                                     </div>
 
-                                    <div className="Marketing-card m3">
+                                    <div className="Marketing-card m3" onClick={click8}>
                                         <img src={card8} alt="" className='noh' />
                                         <img src={card8} alt="" className='yesh' />
                                     </div>
 
-                                    <div className="Marketing-card m2">
+                                    <div className="Marketing-card m2" onClick={click9}>
                                         <img src={card9} alt="" className='noh' />
                                         <img src={cardh9} alt="" className='yesh' />
                                     </div>
 
-                                    <div className="Marketing-card m2">
+                                    <div className="Marketing-card m2" onClick={click10}>
                                         <img src={card10} alt="" className='noh' />
                                         <img src={cardh10} alt="" className='yesh' />
                                     </div>
 
-                                    <div className="Marketing-card m3">
+                                    <div className="Marketing-card m3"onClick={click11}>
                                         <img src={card11} alt="" className='noh' />
                                         <img src={card11} alt="" className='yesh' />
                                     </div>
 
-                                    <div className="Marketing-card m3">
+                                    <div className="Marketing-card m3" onClick={click12}>
                                         <img src={card12} alt="" className='noh' />
                                         <img src={card12} alt="" className='yesh' />
                                     </div>
@@ -148,7 +194,6 @@ const Marketing = () => {
                     </div>
                     </Container>
             </section>
-
 
         </>
     )

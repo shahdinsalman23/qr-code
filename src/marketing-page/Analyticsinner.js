@@ -6,15 +6,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../Footer/Footer';
 import { baseurl } from '../baseurl';
 import Header from '../header/header';
-import Dynamic from './marketing-components/Dynamic';
-import Updating from './marketing-components/Updating';
+import Dynamic5 from './marketing-components/Dynamic5';
+import Updating5 from './marketing-components/Updating5';
 
 
 
 
 
 
-const Editinginner = () => {
+
+
+const Analytics  = () => {
 
  
 
@@ -25,12 +27,12 @@ const Editinginner = () => {
 
     <>
       <Header />
-      <Dynamic/>
-      <Updating/>
+      <Dynamic5/>
+      <Updating5/>
       <Footer/>
     </>
   )
 
 }
 
-export default Editinginner
+export default Analytics 

@@ -682,6 +682,9 @@ button {
 .checkbox-wrapper-33 .checkbox__trigger:focus+.checkbox__symbol {
   box-shadow: 0 0 0 0.25em var(--c-primary-20-percent-opacity);
 }
+h4.hello-style {
+  padding-bottom: 0px !important;
+}
 
 @-webkit-keyframes ripple-33 {
   from {
@@ -720,6 +723,13 @@ button {
   width: 20%;
 }
 
+.new-span {
+    color: #220E27;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    padding-bottom: 30px;
+}
 .selet-hero select {
   width: 100%;
   border-radius: 4px;
@@ -2716,13 +2726,17 @@ section.Benefits {
   color: #220E27;
   font-size: 40px;
   font-weight: 700;
-  padding-bottom: 28px;
+  padding-bottom: 28px; 
+  margin: 0px;
+
 }
 
 .Benefits-box {
   width: 100%;
 }
-
+p.padding-top {
+  padding-top: 30px;
+}
 .Benefits-box p {
   margin: 0px;
   color: #68676C;
@@ -2737,7 +2751,13 @@ section.Benefits {
 .Benefits-box p span {
   font-weight: bold;
 }
-
+.main-Benefits-gap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
 .Benefits-box p::before {
   top: 30px;
   left: -40px;
@@ -2784,4 +2804,143 @@ p.Statistics span::before {
   margin-right: 10px;
   border-radius: 100%;
   vertical-align: middle;
+}
+
+p.hello-space-p {
+  padding-top: 30px;
+}
+
+.main-Dynamic h5 {
+  color: #220E27;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  padding-top: 35px;
+} 
+
+
+.gap-px {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+p.padding-name {
+  padding: 0px !important;
+}
+
+
+section.login {
+  width: 100%;
+}
+
+.main-login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  HEIGHT: 100VH;
+}
+
+
+
+.part-login-1 {
+  width: 42%;
+}
+
+.part-login-2 {
+  width: 50%;
+  HEIGHT: 100%;
+}
+
+.part-login-2 img {
+  width: 100%;
+  HEIGHT: 100%;
+}
+
+.part-login-1 form {
+  width: 100%;
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.part-login-1 form  h2 {
+  color: #220E27;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 75% */
+  margin: 0px;
+}
+
+.part-login-1 form p {
+  margin: 0px;
+  color: #68676C;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding-top: 30px;
+}
+
+.login-input-group {
+  width: 100%;
+  padding: 25px 0px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.login-input-group label {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.login-input-group input {
+  border-radius: 10px;
+  border: 1px solid #000;
+  outline: none;
+  width: 100%;
+  padding: 14px;
+}
+
+.part-login-1 form span {
+  width: 100%;
+  color: #68676C;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px; /* 116.667% */
+}
+
+.part-login-1 form span a {
+  color: #2947C7 !important;
+  cursor: pointer;
+}
+
+.part-login-1 form button {
+  background-color: #2947c7;
+  border: 1px solid #2947c7;
+  color: #FFF;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31.5px; /* 175% */
+  padding: 8px 60px;
+  border-radius: 35px;
+  margin: 20px 0px;
 }
