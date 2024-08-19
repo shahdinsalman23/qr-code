@@ -19,10 +19,11 @@ import apps from '../../img/apps.png';
 import ImagesIcon from '../../img/imageicon.png';
 import DeviceHover from '../../img/Device hover.png';
 import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 
 const BulkQr = () => {
-   
+
     const items = [
         { id: 1, icon: website, title: 'Website', description: 'Open a URL', link: '/website' },
         { id: 2, icon: Listlinks, title: 'List of links', description: 'Group links', link: '/listlinks' },
@@ -45,51 +46,54 @@ const BulkQr = () => {
 
     return (
         <>
-            <div className='NewQR'>
+            <Container>
+                <div className='NewQR'>
 
-                <div className="top-content--b--flex">
-                    <div className="top-content--b">
-                        <h1>Dynamic QR</h1>
-                        <button>WITH TRACKING</button>
+                    <div className="top-content--b--flex">
+                        <div className="top-content--b">
+                            <h1>Dynamic QR</h1>
+                            <button>WITH TRACKING</button>
+                        </div>
+                        <div className="top-content--b--right">
+                            <h3>Example</h3>
+                        </div>
                     </div>
-                    <div className="top-content--b--right">
-                        <h3>Example</h3>
-                    </div>
-                </div>
 
-                <div className="top-content--b--para">
-                    <p>Update content in real time, without changing your code</p>
-                </div>
-
-
-                <div className="main-content--b--flex">
-                    <div className="main-content--b">
-                        {items.map((item) => (
-                            <Link to={item.link} key={item.id} className="icon-grid-item">
-                                <img src={item.icon} alt={item.title} className="icon-grid-icon" />
-                                <div className="icon-grid-text">
-                                    <h3 className="icon-grid-title">{item.title}</h3>
-                                    <p className="icon-grid-description">{item.description}</p>
-                                </div>
-                            </Link>
-                        ))}
+                    <div className="top-content--b--para">
+                        <p>Update content in real time, without changing your code</p>
                     </div>
 
 
-                    <div className="main-content--b--image">
-                        <img src={DeviceHover} alt="Device Hover" />
+                    <div className="main-content--b--flex">
+                        <div className="main-content--b">
+                            {items.map((item) => (
+                                <Link to={item.link} key={item.id} className="icon-grid-item">
+                                    <img src={item.icon} alt={item.title} className="icon-grid-icon" />
+                                    <div className="icon-grid-text">
+                                        <h3 className="icon-grid-title">{item.title}</h3>
+                                        <p className="icon-grid-description">{item.description}</p>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+
+
+                        <div className="main-content--b--image">
+                            <img src={DeviceHover} alt="Device Hover" />
+                        </div>
+
                     </div>
 
+                    <div className="bottom-content--b">
+                        <h1>Static QR</h1>
+                        <button>NO TRACKING</button>
+                    </div>
+                    <div className="bottom-content--b--para">
+                        <p>Reprint required when updating Content</p>
+                    </div>
                 </div>
+            </Container>
 
-                <div className="bottom-content--b">
-                    <h1>Static QR</h1>
-                    <button>NO TRACKING</button>
-                </div>
-                <div className="bottom-content--b--para">
-                    <p>Reprint required when updating Content</p>
-                </div>
-            </div>
         </>
     );
 };

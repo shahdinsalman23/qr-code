@@ -2,9 +2,11 @@
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Accordion from 'react-bootstrap/Accordion';
+import { Container } from 'react-bootstrap';
 const Stats = () => {
     return (
         <>
+        <Container>
             <div className="Stats">
                 <div className="Statshehader">
                     <h1>Stats</h1>
@@ -335,6 +337,7 @@ const Stats = () => {
 
 
             </div>
+        </Container>
 
 
         </>

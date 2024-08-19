@@ -1,11 +1,13 @@
 // Templates.js
 import React from 'react';
 import QRcode from '../../img/QRCODEbardcode.png';
+import { Container } from 'react-bootstrap';
 
 
 const DashboardTemplates = () => {
     return (
         <>
+        <Container>
             <div className="MyTempletes">
                 <div className="MyTempleteshehader">
                     <h1>Templete</h1>
@@ -23,7 +25,8 @@ const DashboardTemplates = () => {
                 </div>
 
 
-            </div>
+            </div>    
+        </Container>
         </>
     );
 };
