@@ -8,28 +8,18 @@ import "swiper/css/thumbs";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { Col, Row } from "react-bootstrap";
 import mobinnerimg from "../../../../img/mob_inner_img.png";
-import websiteicon from "../../../../img/website_icon_img.png";
-import pdficon from "../../../../img/pdf_icon_img.png";
-import vCardicon from "../../../../img/vCard_icon_img.png";
-import imageicon from "../../../../img/image_icon_img.png";
-import texticon from "../../../../img/text_icon_img.png";
-import videoicon from "../../../../img/video_icon_img.png";
-import listlinksicon from "../../../../img/listlinks_icon_img.png";
-import bussinessicon from "../../../../img/bussiness_icon_img.png";
-import menuicon from "../../../../img/menu_icon_img.png";
-import coupenicon from "../../../../img/coupens_icon_img.png";
-import mp3icon from "../../../../img/mp3_icon_img.png";
+import typeproduct from "../../../../img/type_product_svg.svg";
+import typeshop from "../../../../img/type_shop.svg";
+import typesoftware from "../../../../img/type_software.svg";
+import typerestaurent from "../../../../img/type_restaurent.svg";
+import typengo from "../../../../img/type_ongs.svg";
+import typefinance from "../../../../img/type_finance.svg";
 import pdfinnerimg from "../../../../img/mockup_pdf_preview.webp"
 import vCardinnerimg from "../../../../img/mockup_vcard-plus_preview.webp"
 import imagesinnerimg from "../../../../img/mockup_images_preview.webp"
 import textInnerimg from "../../../../img/text_mockeup.png"
 import videoInnerimg from "../../../../img/mockup_video_preview.webp"
-import listlinkinner from "../../../../img/mockup_link-list_preview.webp"
-import bussinessInnerimg from "../../../../img/mockup_business_preview.webp"
-import menuInnerimg from "../../../../img/mockup_menu_preview.webp"
-import couponsInnerimg from "../../../../img/mockup_coupon_preview.webp"
-import mp3Innering from "../../../../img/mockup_mp3_preview.png"
-
+import producrleftside from "../../../../img/products-slider-leftside.webp"
 
 const Secondtypeslider = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -40,99 +30,68 @@ const Secondtypeslider = () => {
                 spaceBetween={10}
                 slidesPerView={4}
                 freeMode
+                effect="fade"
+                fadeEffect={{ crossFade: true }}
                 watchSlidesProgress
                 modules={[FreeMode, Navigation, Thumbs]}
                 className="mySwiper"
             >
                 <div className="upparsmall_card_slider">
+
                     <SwiperSlide>
                         <div className="list_icon_imgtxt">
                             <div className="list_icon_img">
-                                <img src={websiteicon} alt="" />
+                                <img src={typeproduct} alt="" />
                             </div>
                             <p>Website</p>
                         </div>
                     </SwiperSlide>
+
                     <SwiperSlide>
                         <div className="list_icon_imgtxt">
                             <div className="list_icon_img">
-                                <img src={pdficon} alt="" />
+                                <img src={typeshop} alt="" />
                             </div>
                             <p>PDF</p>
                         </div>
                     </SwiperSlide>
+
                     <SwiperSlide>
                         <div className="list_icon_imgtxt">
                             <div className="list_icon_img">
-                                <img src={vCardicon} alt="" />
+                                <img src={typesoftware} alt="" />
                             </div>
                             <p>vCard Plus</p>
                         </div>
                     </SwiperSlide>
+
                     <SwiperSlide>
                         <div className="list_icon_imgtxt">
                             <div className="list_icon_img">
-                                <img src={imageicon} alt="" />
+                                <img src={typerestaurent} alt="" />
                             </div>
                             <p>Images</p>
                         </div>
                     </SwiperSlide>
+
                     <SwiperSlide>
                         <div className="list_icon_imgtxt">
                             <div className="list_icon_img">
-                                <img src={texticon} alt="" />
+                                <img src={typengo} alt="" />
                             </div>
                             <p>Text</p>
                         </div>
                     </SwiperSlide>
+
                     <SwiperSlide>
                         <div className="list_icon_imgtxt">
                             <div className="list_icon_img">
-                                <img src={videoicon} alt="" />
+                                <img src={typefinance} alt="" />
                             </div>
                             <p>Video</p>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="list_icon_imgtxt">
-                            <div className="list_icon_img">
-                                <img src={listlinksicon} alt="" />
-                            </div>
-                            <p>List of links</p>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="list_icon_imgtxt">
-                            <div className="list_icon_img">
-                                <img src={bussinessicon} alt="" />
-                            </div>
-                            <p>Business</p>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="list_icon_imgtxt">
-                            <div className="list_icon_img">
-                                <img src={menuicon} alt="" />
-                            </div>
-                            <p>Menu</p>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="list_icon_imgtxt">
-                            <div className="list_icon_img">
-                                <img src={coupenicon} alt="" />
-                            </div>
-                            <p>Coupons</p>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="list_icon_imgtxt">
-                            <div className="list_icon_img">
-                                <img src={mp3icon} alt="" />
-                            </div>
-                            <p>Mp3</p>
-                        </div>
-                    </SwiperSlide>
+
                 </div>
             </Swiper>
 
@@ -147,6 +106,7 @@ const Secondtypeslider = () => {
                 modules={[FreeMode, Navigation, Thumbs]}
                 className="mySwiper2"
             >
+
                 <SwiperSlide>
                     <Row>
                         <Col lg={6} className="p-0">
@@ -157,24 +117,24 @@ const Secondtypeslider = () => {
                                         "linear-gradient(180deg, #EE5558 0%, rgba(238, 85, 88, 0.00) 100%)",
                                 }}
                             >
-                                <div className="slider_mob_bg_box">
-                                    <img src={mobinnerimg} alt="QR Code Example" />
+                                <div className="slider_fadeleft">
+                                    <img src={producrleftside} alt="QR Code Example" />
                                 </div>
                             </div>
                         </Col>
                         <Col lg={6} className="p-0">
-                            <div className="slider_mob_textbox">
-                                <h3>Website</h3>
-                                <p>
-                                    Link your URL to a QR code so that anyone can access your
-                                    website in the blink of an eye. The easier it is to access,
-                                    the greater the chances of increasing traffic to your website.
-                                </p>
-                                <a href="#">Generate QR Code for Website</a>
+                            <div className="slider_mob_textbox websiteqr_txt">
+                                <h3>Products</h3>
+                                <p>Allow your customers to access your online store quickly and securely.</p>
+                                <div className="create_btns">
+                                    <a href="#">Create QR Code</a>
+                                    <a href="#" className="create_more_info">More Info</a>
+                                </div>
                             </div>
                         </Col>
                     </Row>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <Row>
                         <Col lg={6} className="p-0">
@@ -191,18 +151,18 @@ const Secondtypeslider = () => {
                             </div>
                         </Col>
                         <Col lg={6} className="p-0">
-                            <div className="slider_mob_textbox">
-                                <h3>PDF</h3>
-                                <p>
-                                    Link your URL to a QR code so that anyone can access your
-                                    website in the blink of an eye. The easier it is to access,
-                                    the greater the chances of increasing traffic to your website.
-                                </p>
-                                <a href="#">Generate QR Code for Website</a>
+                            <div className="slider_mob_textbox websiteqr_txt">
+                                <h3>Shops</h3>
+                                <p>With the dynamic URL QR, gain customers by sharing the direct link to your online clothing store.</p>
+                                <div className="create_btns">
+                                    <a href="#">Create QR Code</a>
+                                    <a href="#" className="create_more_info">More Info</a>
+                                </div>
                             </div>
                         </Col>
                     </Row>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <Row>
                         <Col lg={6} className="p-0">
@@ -219,18 +179,18 @@ const Secondtypeslider = () => {
                             </div>
                         </Col>
                         <Col lg={6} className="p-0">
-                            <div className="slider_mob_textbox">
-                                <h3>vCard Plus</h3>
-                                <p>
-                                    Link your URL to a QR code so that anyone can access your
-                                    website in the blink of an eye. The easier it is to access,
-                                    the greater the chances of increasing traffic to your website.
-                                </p>
-                                <a href="#">Generate QR Code for Website</a>
+                            <div className="slider_mob_textbox websiteqr_txt">
+                                <h3>Software</h3>
+                                <p>Share the download link of your application or game, whether the trial or demo version, to attract customers in your advertising campaign.</p>
+                                <div className="create_btns">
+                                    <a href="#">Create QR Code</a>
+                                    <a href="#" className="create_more_info">More Info</a>
+                                </div>
                             </div>
                         </Col>
                     </Row>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <Row>
                         <Col lg={6} className="p-0">
@@ -247,18 +207,18 @@ const Secondtypeslider = () => {
                             </div>
                         </Col>
                         <Col lg={6} className="p-0">
-                            <div className="slider_mob_textbox">
-                                <h3>Images</h3>
-                                <p>
-                                    Link your URL to a QR code so that anyone can access your
-                                    website in the blink of an eye. The easier it is to access,
-                                    the greater the chances of increasing traffic to your website.
-                                </p>
-                                <a href="#">Generate QR Code for Website</a>
+                            <div className="slider_mob_textbox websiteqr_txt">
+                                <h3>Restaurants</h3>
+                                <p>Share the online menu of your restaurant or delivery using a QR code, so that your customers can place their order quickly.</p>
+                                <div className="create_btns">
+                                    <a href="#">Create QR Code</a>
+                                    <a href="#" className="create_more_info">More Info</a>
+                                </div>
                             </div>
                         </Col>
                     </Row>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <Row>
                         <Col lg={6} className="p-0">
@@ -275,18 +235,18 @@ const Secondtypeslider = () => {
                             </div>
                         </Col>
                         <Col lg={6} className="p-0">
-                            <div className="slider_mob_textbox">
-                                <h3>Text</h3>
-                                <p>
-                                    Link your URL to a QR code so that anyone can access your
-                                    website in the blink of an eye. The easier it is to access,
-                                    the greater the chances of increasing traffic to your website.
-                                </p>
-                                <a href="#">Generate QR Code for Website</a>
+                            <div className="slider_mob_textbox websiteqr_txt">
+                                <h3>NGOs</h3>
+                                <p>Through a dynamic URL QR, it allows citizens to access institutional or donation pages.</p>
+                                <div className="create_btns">
+                                    <a href="#">Create QR Code</a>
+                                    <a href="#">More Info</a>
+                                </div>
                             </div>
                         </Col>
                     </Row>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <Row>
                         <Col lg={6} className="p-0">
@@ -303,158 +263,18 @@ const Secondtypeslider = () => {
                             </div>
                         </Col>
                         <Col lg={6} className="p-0">
-                            <div className="slider_mob_textbox">
-                                <h3>Video</h3>
-                                <p>
-                                    Link your URL to a QR code so that anyone can access your
-                                    website in the blink of an eye. The easier it is to access,
-                                    the greater the chances of increasing traffic to your website.
-                                </p>
-                                <a href="#">Generate QR Code for Website</a>
-                            </div>
-                        </Col>
-                    </Row>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Row>
-                        <Col lg={6} className="p-0">
-                            <div
-                                className="slider_mob_mainbox"
-                                style={{
-                                    background:
-                                        "linear-gradient(rgb(104, 216, 233) 0%, rgba(104, 216, 233, 0) 100%)",
-                                }}
-                            >
-                                <div className="slider_mob_bg_box">
-                                    <img src={listlinkinner} alt="QR Code Example" />
+                            <div className="slider_mob_textbox websiteqr_txt">
+                                <h3>Finance and Insurance</h3>
+                                <p>With a dynamic URL QR, create direct access to your clients' online accounts.</p>
+                                <div className="create_btns">
+                                    <a href="#">Create QR Code</a>
+                                    <a href="#">More Info</a>
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6} className="p-0">
-                            <div className="slider_mob_textbox">
-                                <h3>List of links</h3>
-                                <p>
-                                    Link your URL to a QR code so that anyone can access your
-                                    website in the blink of an eye. The easier it is to access,
-                                    the greater the chances of increasing traffic to your website.
-                                </p>
-                                <a href="#">Generate QR Code for Website</a>
-                            </div>
-                        </Col>
                     </Row>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <Row>
-                        <Col lg={6} className="p-0">
-                            <div
-                                className="slider_mob_mainbox"
-                                style={{
-                                    background:
-                                        "linear-gradient(rgb(174, 108, 54) 0%, rgba(174, 108, 54, 0) 100%)",
-                                }}
-                            >
-                                <div className="slider_mob_bg_box">
-                                    <img src={bussinessInnerimg} alt="QR Code Example" />
-                                </div>
-                            </div>
-                        </Col>
-                        <Col lg={6} className="p-0">
-                            <div className="slider_mob_textbox">
-                                <h3>Business</h3>
-                                <p>
-                                    Link your URL to a QR code so that anyone can access your
-                                    website in the blink of an eye. The easier it is to access,
-                                    the greater the chances of increasing traffic to your website.
-                                </p>
-                                <a href="#">Generate QR Code for Website</a>
-                            </div>
-                        </Col>
-                    </Row>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Row>
-                        <Col lg={6} className="p-0">
-                            <div
-                                className="slider_mob_mainbox"
-                                style={{
-                                    background:
-                                        "linear-gradient(rgb(48, 108, 63) 0%, rgba(48, 108, 63, 0) 100%)",
-                                }}
-                            >
-                                <div className="slider_mob_bg_box">
-                                    <img src={menuInnerimg} alt="QR Code Example" />
-                                </div>
-                            </div>
-                        </Col>
-                        <Col lg={6} className="p-0">
-                            <div className="slider_mob_textbox">
-                                <h3>Menu</h3>
-                                <p>
-                                    Link your URL to a QR code so that anyone can access your
-                                    website in the blink of an eye. The easier it is to access,
-                                    the greater the chances of increasing traffic to your website.
-                                </p>
-                                <a href="#">Generate QR Code for Website</a>
-                            </div>
-                        </Col>
-                    </Row>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Row>
-                        <Col lg={6} className="p-0">
-                            <div
-                                className="slider_mob_mainbox"
-                                style={{
-                                    background:
-                                        "linear-gradient(rgb(201, 80, 83) 0%, rgba(201, 80, 83, 0) 100%)",
-                                }}
-                            >
-                                <div className="slider_mob_bg_box">
-                                    <img src={couponsInnerimg} alt="QR Code Example" />
-                                </div>
-                            </div>
-                        </Col>
-                        <Col lg={6} className="p-0">
-                            <div className="slider_mob_textbox">
-                                <h3>Coupons</h3>
-                                <p>
-                                    Link your URL to a QR code so that anyone can access your
-                                    website in the blink of an eye. The easier it is to access,
-                                    the greater the chances of increasing traffic to your website.
-                                </p>
-                                <a href="#">Generate QR Code for Website</a>
-                            </div>
-                        </Col>
-                    </Row>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Row>
-                        <Col lg={6} className="p-0">
-                            <div
-                                className="slider_mob_mainbox"
-                                style={{
-                                    background:
-                                        "linear-gradient(rgb(70, 225, 195) 0%, rgba(70, 225, 195, 0) 100%)",
-                                }}
-                            >
-                                <div className="slider_mob_bg_box">
-                                    <img src={mp3Innering} alt="QR Code Example" />
-                                </div>
-                            </div>
-                        </Col>
-                        <Col lg={6} className="p-0">
-                            <div className="slider_mob_textbox">
-                                <h3>MP3</h3>
-                                <p>
-                                    Link your URL to a QR code so that anyone can access your
-                                    website in the blink of an eye. The easier it is to access,
-                                    the greater the chances of increasing traffic to your website.
-                                </p>
-                                <a href="#">Generate QR Code for Website</a>
-                            </div>
-                        </Col>
-                    </Row>
-                </SwiperSlide>
+
             </Swiper>
         </>
     )

@@ -684,6 +684,7 @@ button {
 .checkbox-wrapper-33 .checkbox__trigger:focus+.checkbox__symbol {
   box-shadow: 0 0 0 0.25em var(--c-primary-20-percent-opacity);
 }
+
 h4.hello-style {
   padding-bottom: 0px !important;
 }
@@ -726,12 +727,13 @@ h4.hello-style {
 }
 
 .new-span {
-    color: #220E27;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 34px;
-    padding-bottom: 30px;
+  color: #220E27;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  padding-bottom: 30px;
 }
+
 .selet-hero select {
   width: 100%;
   border-radius: 4px;
@@ -1007,6 +1009,7 @@ ul.list_icon_container {
   border-radius: 8px;
   border: 2px solid #E4E4E4;
   background: #FFF;
+  cursor: pointer;
 }
 
 .list_icon_imgtxt .list_icon_img {
@@ -1179,7 +1182,7 @@ ul.list_icon_container {
 }
 
 .slider_mob_textbox a {
-  color: #FFF !important;
+  color: #FFF;
   font-family: Lato;
   font-size: 18px;
   font-style: normal;
@@ -1230,6 +1233,7 @@ ul.list_icon_container {
   overflow-y: scroll;
   transform: translate3d(0.35px, 0px, 0px) !important;
 }
+
 section.Plans {
   width: 100%;
   padding: 120px;
@@ -1291,7 +1295,7 @@ p.para-tital-1 {
   color: #220E27;
 }
 
-.Plans-card  h2 {
+.Plans-card h2 {
   color: #220E27;
   font-size: 28px;
   font-weight: 900;
@@ -1359,6 +1363,7 @@ p.para-tital-2 {
   text-align: center;
   padding-top: 40px;
 }
+
 /************** Swiper Slider CSS End **********/
 
 
@@ -1818,6 +1823,22 @@ section.second_type_sec {
   margin: 0 auto;
 }
 
+section.second_type_sec .swiper-free-mode > .swiper-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.list_icon_imgtxt:hover {
+  border: 2px solid rgb(29, 89, 249);
+  cursor: pointer;
+}
+
+
+
 
 /*********** Second Type Sec CSS End ****************/
 
@@ -1835,7 +1856,7 @@ section.second_type_sec {
 
 
 .three_types_sec_head {
-    text-align: center;
+  text-align: center;
 }
 
 .three_types_sec_head p {
@@ -1852,8 +1873,10 @@ section.second_type_sec {
 }
 
 section.create_type_sec {
-  padding: 80px 0px;
+  padding: 120px 0px;
+  background: linear-gradient(53deg, #EEE 0%, rgba(238, 238, 238, 0.00) 58.35%);
 }
+
 
 .create_type_txt h6 {
   color: #2947c7;
@@ -1877,10 +1900,105 @@ section.create_type_sec {
   margin-top: 30px;
   font-weight: 400;
   line-height: 32px;
+  margin-bottom: 30px;
+} 
+
+
+.create_type_txt a {
+  background-color: #1043CB;
+  padding: 16px 16px;
+  position: relative;
+  font-size: 18px;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  line-height: 1.75;
+  white-space: nowrap;
+  border-radius: 28px;
+  text-transform: none;
+  transition: all 0.2s ease-in-out;
+  color: #ffff;
+}
+
+.create_type_txt {
+  padding: 0px 80px 0px 0px;
+}
+
+.personalize_type_sec {
+  padding: 120px 0px;
+  background: linear-gradient(300deg, #EEE 0%, rgba(238, 238, 238, 0.00) 58.35%);
+}
+
+/*********** Three Type Sec CSS End ****************/
+
+
+/*********** Four Type Sec CSS Start ****************/
+
+
+.all_plan_include_sec {
+  padding: 90px 0px;
+  background-color: rgb(247, 247, 247);
+}
+
+.all_plan_box {
+  border-bottom: 1px solid #E8EAF2;
+}
+
+.plan_box_content {
+  display: flex;
+  gap: 10px;
+  padding: 32px 30px 32px 0px;
+}
+
+.plan_box_text h3 {
+  color: #220E27;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.plan_box_content img {
+  width: 36px;
+  height: 36px;
+}
+
+.plan_box_text p {
+  color: #68676C;
+  font-size: 12px;
+  margin-top: 2px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.all_plan_head {
+  margin-bottom: 78px;
+}
+
+.all_plan_head h3 {
+  color: #220E27;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.create_more_info {
+    padding: 0px !important;
+    background: transparent !important;
+    color: #1D59F9 !important;
+    border: none !important;
 }
 
 
-/*********** Three Type Sec CSS End ****************/
+.create_btns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.websiteqr_txt {
+  padding: 140px 100px 140px 150px; 
+}
+
+/*********** Four Type Sec CSS End ****************/
 
 
 /********************* Shahdin CSS ENd ***********************/
@@ -2866,7 +2984,7 @@ section.Benefits {
   color: #220E27;
   font-size: 40px;
   font-weight: 700;
-  padding-bottom: 28px; 
+  padding-bottom: 28px;
   margin: 0px;
 
 }
@@ -2874,9 +2992,11 @@ section.Benefits {
 .Benefits-box {
   width: 100%;
 }
+
 p.padding-top {
   padding-top: 30px;
 }
+
 .Benefits-box p {
   margin: 0px;
   color: #68676C;
@@ -2891,6 +3011,7 @@ p.padding-top {
 .Benefits-box p span {
   font-weight: bold;
 }
+
 .main-Benefits-gap {
   width: 100%;
   display: flex;
@@ -2898,6 +3019,7 @@ p.padding-top {
   align-items: center;
   gap: 70px;
 }
+
 .Benefits-box p::before {
   top: 30px;
   left: -40px;
@@ -2952,13 +3074,48 @@ p.Statistics span::before {
 
 /* BASIT'S CSS */
 
+.sidebar {
+  width: 16%;
+  /* Width when sidebar is open */
+  transition: width 0.3s ease;
+}
+
+.sidebar.closed {
+  width: 0;
+  /* Width when sidebar is closed */
+  display: none;
+}
+
 .page-content {
-  width: 84%;
+  transition: width 0.3s ease;
   position: absolute;
   top: 0em;
   right: 0;
 }
 
+.page-content.with-sidebar {
+  width: 90%;
+  /* Width when sidebar is open */
+}
+
+.page-content.full-width {
+  width: 100%;
+  /* Full width when sidebar is closed */
+}
+
+.main-content {
+  display: flex;
+}
+
+.toggle-button {
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
 
 /* Variables Converted to Plain CSS */
 :root {
@@ -2971,6 +3128,7 @@ p.Statistics span::before {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
 }
 
+/* 
 /* SIDEBAR */
 /* Sidebar.css */
 .sidebar {
@@ -2985,7 +3143,7 @@ p.Statistics span::before {
   transform: translateX(0);
 }
 
-.sidebar.closed {
+*/ .sidebar.closed {
   transform: translateX(-100%);
 }
 
@@ -2997,7 +3155,7 @@ p.Statistics span::before {
 
 .sidebar-nav li {
   padding: 15px;
-  text-align: center;
+  text-align: left;
 }
 
 .sidebar-nav a {
@@ -3013,6 +3171,43 @@ p.Statistics span::before {
   text-align: left;
 }
 
+.sidebar-nav-ul .menu-item {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-nav-ul .menu-item .menu-link {
+  text-decoration: none;
+  color: black;
+  /* Adjust based on your theme */
+  margin-left: 0px;
+  display: block;
+  width: 100%;
+}
+
+.sidebar-nav-ul .menu-item:hover,
+.sidebar-nav-ul .menu-item.active {
+  background: rgba(243, 246, 255, 1);
+  border-radius: 4px;
+  /* Optional: for rounded corners */
+  border-right: 5px solid rgba(41, 71, 199, 1);
+}
+
+
+.sidebar-nav-ul .menu-item.active .menu-link {
+  color: #000;
+  /* White text on active tab */
+}
+
+.sidebar-nav-ul .menu-item .Navbar-icons img {
+  width: 24px;
+  /* Adjust size based on your design */
+  height: 24px;
+}
 
 
 .sidebar.closed+.content {
@@ -3047,7 +3242,7 @@ p.Statistics span::before {
 
 .brand {
   /* width: 100%; */
-  height: 90px;
+  height: 70px;
   font-family: inherit;
   font-size: 1.75rem;
   font-weight: 700;
@@ -3064,8 +3259,10 @@ p.Statistics span::before {
 .headerflex {
   display: flex;
   align-items: center;
-  gap: 22em;
+  justify-content: space-between;
+  width: 100%;
 }
+
 .backandnextbuttons {
   display: flex;
   align-items: center;
@@ -3111,6 +3308,7 @@ p.Statistics span::before {
   gap: 10.6px;
   margin: 0px;
 }
+
 .brand--next svg {
   fill: #FFF;
   width: 17.939px;
@@ -3149,6 +3347,7 @@ p.Statistics span::before {
   align-items: center;
   padding: 1rem 5em 1rem 25rem;
 }
+
 /* Main */
 .main .wrapper {
   display: flex;
@@ -3241,11 +3440,6 @@ p.Statistics span::before {
   border: none;
 }
 
-.menu-item {
-  display: flex;
-  align-items: center;
-  padding: 0px 20px;
-}
 
 .brand p {
   font-family: Lato;
@@ -3313,11 +3507,11 @@ p.Statistics span::before {
   position: relative;
 }
 
+/* DASHBOARD CONTAINERS */
 
 /* SECTION NEWQR */
 .NewQR {
   width: 100%;
-  padding-left: 50px;
   background: #F7F7F7;
   padding-top: 10em;
 }
@@ -3367,10 +3561,13 @@ p.Statistics span::before {
   padding: 2px 9px 3px 10px;
   border-radius: 38px;
   background: #90FF92;
+  font-size: 20px;
 }
 
 .main-content--b--flex {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .main-content--b {
@@ -3379,6 +3576,31 @@ p.Statistics span::before {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.main-content--b--website {
+  width: 65em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.main-content--b--website--input input {
+  width: 100%;
+  height: 80px;
+  padding: 28px 741px 28px 64px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 1);
+  margin-bottom: 20px;
+}
+
+.main-content--b--website--input input::placeholder {
+  color: rgba(128, 128, 128, 1);
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
 }
 
 .icon-grid-item {
@@ -3455,7 +3677,6 @@ p.Statistics span::before {
 /* MYQRCODES */
 .MyQRCodes {
   width: 100%;
-  padding-left: 26px;
   background: #F7F7F7;
 }
 
@@ -3500,11 +3721,11 @@ p.Statistics span::before {
 .MyQRCodes--navbar {
   width: 100%;
   height: 74px;
-  padding: 12px 23px 0px 0px;
+  padding: 12px 0px 0px 0px;
   border-bottom: 1px solid #DDDDDD;
   display: flex;
   align-items: center;
-  gap: 271px;
+  justify-content: space-between;
 }
 
 .MyQRCodes--navbar a {
@@ -3627,7 +3848,7 @@ p.Statistics span::before {
 
 
 .MyQRCodes--second--navbar {
-  padding-left: 83px;
+  padding-left: 20px;
   padding-top: 36px;
   display: flex;
   align-items: center;
@@ -3942,12 +4163,11 @@ p.Statistics span::before {
 /* MyTempletes */
 .MyTempletes {
   width: 100%;
-  padding-left: 26px;
   background: #F7F7F7;
 }
 
 .MyTempleteshehader {
-  padding-top: 133px;
+  padding-top: 110px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -4015,17 +4235,22 @@ p.Statistics span::before {
   width: 100%;
   padding-top: 212px;
   padding-right: 40px;
-  padding-left: 50px;
 }
 
 .PlayandPayments--Faqs {
   display: flex;
   align-items: flex-start;
-  gap: 17em;
+  justify-content: space-between;
   width: 100%;
   padding-top: 52px;
   padding-right: 40px;
-  padding-left: 50px;
+}
+
+.PlayandPayments--Faqs h1 {
+  font-size: 33px;
+  width: 269px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .MyTempletes--Faqs--main {
@@ -4062,7 +4287,7 @@ p.Statistics span::before {
 
 
 .TempleteHeader {
-  margin-top: 60px;
+  margin-top: 20px;
   display: flex;
   background-color: #F7F7F7;
   z-index: 1;
@@ -4611,15 +4836,375 @@ p.Statistics span::before {
   margin: 0px;
 }
 
-/* .STATS--accordian{
-width: 1510px;
-height: 122px;
-padding: 41px 45px 40px 46px;
-border-radius: 10px;
-background: #FFF;
-box-shadow: 0px 4px 4px 0px #96949C;
-margin-bottom: 20px;
-} */
+
+.MyDomains-faq-box {
+  width: 61%;
+}
+
+.MyDomains-faq-box .accordion {
+  border: none;
+  border-radius: 0px;
+}
+
+.MyDomains-faq-box .accordion__button {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #220E27;
+  font-family: sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 32px;
+  /* 123.077% */
+  padding: 24px 0px;
+}
+
+
+.MyDomains-faq-box .accordion__button:hover {
+  background-color: transparent;
+}
+
+.MyDomains-faq-box .accordion__button svg {
+  transform: rotate(180deg);
+}
+
+.MyDomains-faq-box .accordion__button[aria-expanded="true"] svg {
+  transform: rotate(0deg);
+}
+
+.MyDomains-faq-box .accordion__panel {
+  padding: 0px;
+  padding-bottom: 24px;
+  color: #68676C;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 166.667% */
+}
+
+.MyDomains-faq-box .accordion__panel span {
+  color: #1D59F9;
+  color: #2947c7;
+}
+
+
+
+.NewQR-Website-faq-box {
+  width: 100%;
+}
+
+.NewQR-Website-faq-box .accordion {
+  border: none;
+  border-radius: 0px;
+}
+
+.NewQR-Website-faq-box .accordion__button {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+
+  /* 123.077% */
+  padding: 24px 40px;
+  margin-bottom: 20px;
+}
+
+
+
+.NewQR-Website-faq-box .accordion__button:hover {
+  background-color: transparent;
+}
+
+.NewQR-Website-faq-box .accordion__button svg {
+  transform: rotate(180deg);
+}
+
+.NewQR-Website-faq-box .accordion__button[aria-expanded="true"] svg {
+  transform: rotate(0deg);
+}
+
+.NewQR-Website-faq-box .accordion__panel {
+  padding: 20px;
+  margin-bottom: 24px;
+  color: #68676C;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+
+
+
+.NewQR-Website-faq-box .accordion__panel span {
+  color: #1D59F9;
+  color: #2947c7;
+}
+
+.NewQr-Website-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.NewQr-Website-header h1 {
+  font-family: Lato;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: left;
+  margin: 0px;
+}
+
+.NewQr-Website-header--ImgSec {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.NewQr-Website-header--ImgSec h2 {
+  font-family: Lato;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: left;
+
+}
+
+.NewQr-Website-header--ImgSec img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.NewQR-Website-faq-box--clock {
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+}
+
+.NewQR-Website-faq-box--info {
+  width: 50px;
+  height: 50px;
+}
+
+
+.NewQR-Website-faq-box--text {
+  width: 90%;
+}
+
+.NewQR-Website-faq-box--text h2 {
+  color: rgba(0, 0, 0, 1);
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  margin: 0px;
+}
+
+.NewQR-Website-faq-box--text p {
+  color: rgba(128, 128, 128, 1);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-align: left;
+  margin: 0px;
+
+}
+
+#flexSwitchCheckDefault {
+  padding: 10px 20px;
+  height: 22px;
+}
+
+.form-check .form-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form-check {
+  display: flex;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: .125rem;
+  align-items: center;
+  gap: 30px;
+}
+
+.form-check p {
+  margin: 0px;
+}
+
+.form-switch {
+  padding-left: 5.5em;
+}
+
+.main-content--b--image {
+  width: 22%;
+}
+
+.main-content--b--image p {
+  color: rgba(128, 128, 128, 1);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  padding: 35px 0px;
+}
+
+.NewQR-Website-faq-box--websiteurl {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.NewQR-Website-faq-box--websiteurl h3 {
+  color: rgba(104, 103, 108, 1);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+  text-align: left;
+}
+
+.NewQR-Website-faq-box--websiteurl input {
+  width: 100%;
+  height: 50px;
+  top: 215px;
+  left: 37px;
+  padding: 16px 833px 17px 34px;
+  gap: 0px;
+  border-radius: 72px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  border: 2px solid rgba(41, 71, 199, 1)
+}
+
+.NewQR-Website-faq-box--websiteurl button {
+  width: 183px;
+  height: 35px;
+  margin-top: 20px;
+  padding: 9px 20px 9px 43px;
+  border-radius: 72px;
+  border: 2px 0px 0px 0px;
+  border: 2px solid rgba(41, 71, 199, 1);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+}
+
+
+.Stats--inner--faq-box {
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.Stats--inner--faq-box .accordion {
+  border: none;
+  border-radius: 0px;
+}
+
+.Stats--inner--faq-box .accordion__button {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  box-shadow: none;
+  color: #220E27;
+  font-family: sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 32px;
+  /* 123.077% */
+  padding: 24px 0px;
+}
+
+
+.Stats--inner--faq-box .accordion__button:hover {
+  background-color: transparent;
+}
+
+.Stats--inner--faq-box .accordion__button svg {
+  transform: rotate(180deg);
+}
+
+.Stats--inner--faq-box .accordion__button[aria-expanded="true"] svg {
+  transform: rotate(0deg);
+}
+
+.Stats--inner--faq-box .accordion__panel {
+  padding: 0px;
+  padding-bottom: 24px;
+  color: #68676C;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 166.667% */
+}
+
+.accordion__button svg {
+  transition: transform 0.3s ease;
+  transform: rotate(90deg);
+  height: 18px;
+  width: 18px;
+  margin: 0px;
+}
+
+.Stats--inner--faq-box .accordion__panel span {
+  color: #1D59F9;
+  color: #2947c7;
+}
+
+
+.Stats--inner--faq-box input {
+  width: 30%;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 10px 10px 0px 0px;
+  border-color: #EAEAEC;
+  background-color: #F7F7F7;
+}
+
+.website--des {
+  width: 100%;
+  padding: 20px 30px 0px 0px;
+}
+
+.Stats--inner--faq-box p {
+  margin: 0px;
+}
+.Configuration--inner--faq-box {
+  
+}
+/* ----------------------------------------------------------------------------------------------------------------- */
 
 .STATS--accordian {
   width: 1510px;
@@ -4668,7 +5253,9 @@ margin-bottom: 20px;
   box-shadow: 0px 4px 4px 0px #96949C;
   margin-bottom: 20px;
   /* add this to allow accordion items to expand */
-  overflow: hidden;}
+  overflow: hidden;
+}
+
 p.hello-space-p {
   padding-top: 30px;
 }
@@ -4679,7 +5266,7 @@ p.hello-space-p {
   font-weight: 700;
   line-height: 34px;
   padding-top: 35px;
-} 
+}
 
 
 .gap-px {
@@ -4731,13 +5318,14 @@ section.login {
   align-items: flex-start;
 }
 
-.part-login-1 form  h2 {
+.part-login-1 form h2 {
   color: #220E27;
   font-family: Inter;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px; /* 75% */
+  line-height: 30px;
+  /* 75% */
   margin: 0px;
 }
 
@@ -4748,7 +5336,8 @@ section.login {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
   padding-top: 30px;
 }
 
@@ -4767,7 +5356,8 @@ section.login {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
 }
 
 .login-input-group input {
@@ -4785,7 +5375,8 @@ section.login {
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
-  line-height: 14px; /* 116.667% */
+  line-height: 14px;
+  /* 116.667% */
 }
 
 .part-login-1 form span a {
@@ -4802,7 +5393,8 @@ section.login {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 31.5px; /* 175% */
+  line-height: 31.5px;
+  /* 175% */
   padding: 8px 60px;
   border-radius: 35px;
   margin: 20px 0px;

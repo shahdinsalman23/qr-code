@@ -1,11 +1,13 @@
 // Templates.js
 import React from 'react';
 import QRcode from '../../img/QRCODEbardcode.png';
+import { Container } from 'react-bootstrap';
 
 
-const Templates = () => {
+const DashboardTemplates = () => {
     return (
         <>
+        <Container>
             <div className="MyTempletes">
                 <div className="MyTempleteshehader">
                     <h1>Templete</h1>
@@ -23,9 +25,10 @@ const Templates = () => {
                 </div>
 
 
-            </div>
+            </div>    
+        </Container>
         </>
     );
 };
 
-export default Templates;
+export default DashboardTemplates;
