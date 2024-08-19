@@ -10,6 +10,22 @@ import SignUp from "../login/signup";
 import Login from "../login/login";
 import logo1 from "../img/head-log.svg";
 
+
+import n1 from "../img/n1.svg";
+import n2 from "../img/n2.svg";
+import n3 from "../img/n3.svg";
+import n4 from "../img/n4.svg";
+import n5 from "../img/n5.svg";
+import n6 from "../img/n6.svg";
+import n7 from "../img/n7.svg";
+import n8 from "../img/n8.svg";
+import n9 from "../img/n9.svg";
+import n10 from "../img/n10.svg";
+import n11 from "../img/n11.svg";
+import n12 from "../img/n12.svg";
+import n13 from "../img/n13.svg";
+
+
 const Header = () => {
 
 
@@ -162,6 +178,52 @@ const Header = () => {
   const sigup = () => {
     navigate("/signup");
   };
+
+  const plas = () => {
+    navigate("/Prices");
+  };
+
+  const Faq = () => {
+    navigate("/Faq");
+  };
+
+
+  const page1 = () => {
+    navigate("/Static");
+  };
+  const page2 = () => {
+    navigate("/Bulk");
+  };
+  const page3 = () => {
+    navigate("/Dynamic");
+  };
+  const page4 = () => {
+    navigate("/Facebook");
+  };
+  const page5 = () => {
+    navigate("/Varietyinner");
+  };
+  const page6 = () => {
+    navigate("/Custom");
+  };
+  const page7 = () => {
+    navigate("/Collaborating");
+  };
+  const page8 = () => {
+    navigate("/Templates");
+  };
+  const page9 = () => {
+    navigate("/Analytics");
+  };
+  const page10 = () => {
+    navigate("/Tracking");
+  };
+  const page11 = () => {
+    navigate("/Editing");
+  };
+  const page12 = () => {
+    navigate("/Password");
+  };
   return (
     <>
       <header className="hero-header">
@@ -171,8 +233,8 @@ const Header = () => {
               <img src={logo1} alt="" />
             </div>
             <ul>
-              <li>Plans and prices</li>
-              <li>FAQ</li>
+              <li onClick={plas}>Plans and prices</li>
+              <li onClick={Faq}>FAQ</li>
               <li>API</li>
 
               <div className="dropdown">
@@ -204,11 +266,148 @@ const Header = () => {
                 </li>
 
                 <div id="myDropdownz" className={`dropdown-content ${isOpenz ? 'show' : ''}`}>
-                  <a>Types of QR code</a>
-                  <a >QR Codes for</a>
-                  <a>QR Codes on</a>
-                  <a>QR Code Generator</a>
 
+                  <div className="Features-box">
+
+
+
+                    <div className="Features-card" onClick={page1}>
+                      <div className="Features-img-box">
+                        <img src={n1} alt="" />
+                      </div>
+
+                      <span>
+                        <h2>Static QR</h2>
+                        <p>Permanent and unalterable QR codes.</p>
+                      </span>
+                    </div>
+
+                    <div className="Features-card" onClick={page2}>
+                      <div className="Features-img-box">
+                        <img src={n7} alt="" />
+                      </div>
+
+                      <span>
+                        <h2>Bulk creation and download</h2>
+                        <p>Generate and download QRs on a large scale.</p>
+                      </span>
+                    </div> 
+
+                    <div className="Features-card" onClick={page3}>
+                      <div className="Features-img-box">
+                        <img src={n2} alt="" />
+                      </div>
+
+                      <span>
+                        <h2>Dynamic QR</h2>
+                        <p>QR codes updateable in real time.</p>
+                      </span>
+                    </div>
+
+                    <div className="Features-card" onClick={page4}>
+                      <div className="Features-img-box">
+                        <img src={n8} alt="" />
+                      </div>
+
+                      <span>
+                        <h2>Google pixel integration</h2>
+                        <p>Improve the analysis of your digital campaigns.</p>
+                      </span>
+                    </div>     
+
+                    <div className="Features-card" onClick={page5}>
+                      <div className="Features-img-box">
+                        <img src={n3} alt="" />
+                      </div>
+
+                      <span>
+                        <h2>Variety of download formats</h2>
+                        <p>Expand the possibilities of use of your QRs.</p>
+                      </span>
+                    </div>
+
+                    <div className="Features-card" onClick={page6}>
+                      <div className="Features-img-box">
+                        <img src={n10} alt="" />
+                      </div>
+
+                      <span>
+                        <h2>Custom Domain</h2>
+                        <p>Strengthen your brand with your own domain.</p>
+                      </span>
+                    </div>
+
+                    <div className="Features-card" onClick={page7}>
+                      <div className="Features-img-box">
+                        <img src={n4} alt="" />
+                      </div>
+
+                      <span>
+                        <h2>Limited contributing users</h2>
+                        <p>Manage your QRs as a team.</p>
+                      </span>
+                    </div>
+
+                    <div className="Features-card" onClick={page8}>
+                      <div className="Features-img-box">
+                        <img src={n11} alt="" />
+                      </div>
+
+                      <span>
+                        <h2>Templates</h2>
+                        <p>Save and reuse your own designs..</p>
+                      </span>
+                    </div>
+
+                    <div className="Features-card "onClick={page9}>
+                      <div className="Features-img-box">
+                        <img src={n5} alt="" />
+                      </div>
+
+                      <span>
+                        <h2>Complete analytics</h2>
+                        <p>Understand performance with detailed data.</p>
+                      </span>
+                    </div>
+
+                    <div className="Features-card" onClick={page10}>
+                      <div className="Features-img-box">
+                        <img src={n12} alt="" />
+                      </div>
+
+                      <span>
+                        <h2>Event trackingtatic QR</h2>
+                        <p>Track interactions.</p>
+                      </span>
+                    </div>
+
+                    <div className="Features-card"onClick={page11}>
+                      <div className="Features-img-box">
+                        <img src={n6} alt="" />
+                      </div>
+
+                      <span>
+                        <h2>Editing and management of QRs</h2>
+                        <p>Customize and organize your QRs.</p>
+                      </span>
+                    </div>
+
+                    <div className="Features-card" onClick={page12}>
+                      <div className="Features-img-box">
+                        <img src={n13} alt="" />
+                      </div>
+
+                      <span>
+                        <h2>Password access protection</h2>
+                        <p>Secure your codes.</p>
+                      </span>
+                    </div>
+
+
+         
+
+
+                  </div>
                 </div>
               </div>
 

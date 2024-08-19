@@ -23,6 +23,9 @@ const Login = () => {
     navigate("/signup");
   };
 
+  const dachbord = () => {
+    navigate("/NewQR");
+  };
 
 
   return (
@@ -49,7 +52,7 @@ const Login = () => {
 
 <span> Have you forgotten your password? <a>Click here</a></span>
 
-<button>Log In</button>
+<button onClick={dachbord}>Log In</button>
 
 
 <span> Don't have an account? <a onClick={sigup}>Create an account</a></span>

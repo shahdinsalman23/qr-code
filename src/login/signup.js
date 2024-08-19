@@ -23,7 +23,9 @@ const Signup = () => {
   const logins = () => {
     navigate("/login");
   };
-
+  const dachbord = () => {
+    navigate("/NewQR");
+  };
   
 
 
@@ -64,7 +66,7 @@ const Signup = () => {
 
 <span> Have you forgotten your password?  <a>Click here</a></span>
 
-<button>Sign Up</button>
+<button onClick={dachbord}>Sign Up</button>
 
 
 <span> Have an account? <a onClick={logins}>Login</a></span>

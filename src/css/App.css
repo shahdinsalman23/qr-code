@@ -1233,6 +1233,7 @@ ul.list_icon_container {
 section.Plans {
   width: 100%;
   padding: 120px;
+  background: #F7F7F7;
 }
 
 .main-Plans {
@@ -1248,6 +1249,7 @@ section.Plans {
   line-height: 72px;
   padding-bottom: 12px;
   color: #000;
+  margin: 0px;
   text-align: center;
 }
 
@@ -1266,6 +1268,7 @@ p.para-tital-1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 55px;
 }
 
 .Plans-card {
@@ -1300,8 +1303,9 @@ p.para-tital-1 {
 
 .Plans-card span {
   display: flex;
-  gap: 5px;
+  gap: 0px 5px;
   padding-top: 21px;
+  flex-wrap: wrap;
 }
 
 .Plans-card span p {
@@ -1326,8 +1330,8 @@ p.para-tital-1 {
   padding: 8px 16px;
   position: relative;
   font-size: 18px;
-  color: #1D59F9;
-  border: 2px solid #1D59F9;
+  color: #2947c7;
+  border: 2px solid #2947c7;
   box-shadow: none;
   box-sizing: border-box;
   transition: all 0.2s ease-in-out;
@@ -1339,9 +1343,16 @@ p.para-tital-1 {
   text-transform: none;
   width: 100%;
   background-color: #fff;
+  transition: 0.3s;
 }
-
-
+.Plans-card button:hover{
+  background-color: #2947c7;
+  color: #FFF;
+}
+.footer_links ul {
+  padding: 0px;
+  margin: 0px;
+}
 
 p.para-tital-2 {
   margin: 0px;
@@ -4795,4 +4806,318 @@ section.login {
   padding: 8px 60px;
   border-radius: 35px;
   margin: 20px 0px;
+}
+
+.Plans-card span h3 {}
+
+.Plans-card span h4 {
+    margin: 0px;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 34px;
+    text-decoration: line-through;
+    color: #7B777C;
+}
+
+.Plans-card.active {
+    border: 1px solid #2947c7;
+    position: relative;
+}
+
+.more-box-active {
+    position: absolute;
+    background: #2947c7;
+    border-radius: 24px;
+    padding: 5px 14px;
+    top: -18px;
+    right: 14px;
+}
+
+.more-box-active p {
+    margin: 0px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.Plans-card.active a {
+    color: #2947c7 !important;
+}
+
+button {}
+
+.healt-box {
+    width: 100%;
+    gap: 24px;
+    display: flex;
+    padding: 16px 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 6px 0px #CDD1E0;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 8px;
+}
+
+
+.Payment-methods {
+  width: 100%;
+  padding: 70px 0px;
+}
+
+.Payment-methods h2 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 700;
+  color: #000;
+  margin: 0px;
+}
+
+.Payment-methods-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+span.span-p-box {
+  width: 10%;
+  height: 30px;
+}
+
+span.span-p-box img {
+  width: 100%;
+  height: 100%;
+}
+.healt-box span {
+  display: flex;
+  padding: 12px 14px;
+  background: #F7F7F7;
+  max-height: 68px;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.healt-box span img {
+  width: 100%;
+}
+
+.healt-box p {
+  color: #5A5B70;
+  font-size: 13px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 0px;
+}
+
+section.Questions-faq {
+  width: 100%;
+  padding: 120px 0 150px;
+}
+
+.full-with-h2 {
+  width: 100%;
+}
+
+.Everything-faq-box.more-full-with {
+  width: 100%;
+}
+
+.full-with-h2 h2 {
+  font-size: 40px;
+  max-width: none;
+  text-align: center;
+  line-height: 48px;
+  padding-bottom: 60px;
+  margin: 0pc;
+} 
+
+.include-box {
+  width: 100%;
+}
+
+.three-hero-box {
+  width: 100%;
+  display: flex;
+  padding: 30px 0pc;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #E8EAF2;
+}
+
+.include-card {
+  width: 32%;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding-right: 95px;
+}
+
+.include-card span h2 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+.include-card span p {
+  color: #68676C;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0px;
+}
+
+section.faq {
+  width: 100%;
+  padding: 110px 0px 55px 0px;
+  background-color: #F7F7F7;
+}
+
+.main-faq {
+  width: 100%;
+}
+
+.main-faq h2 {
+  font-size: 44px;
+  line-height: 72px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.main-faq p {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(104, 103, 108);
+  font-weight: 500;
+  text-align: center;
+}
+section.faq-tab {
+  width: 100%;
+}
+
+.main-faq-tab {
+  width: 100%;
+}
+
+.faq-tab-box {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 152px;
+}
+
+.faq-tab-box .accordion {
+  border: none;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.faq-tab-box .accordion__button {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 0px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-tab-box .accordion__item + .accordion__item {
+  border: none;
+}
+
+.faq-tab-box .accordion__item {
+  width: 100%;
+}
+
+.FAQ-tab-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.FAQ-tab-btn button {
+  display: flex;
+  background-color: #2947c7;
+  border: 1px solid #2947c7;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 38px;
+  gap: 10px;
+  color: #fff;
+}
+.faq-tab-box .accordion__button:hover {
+  background-color: transparent;
+}
+.FAQ-tab-btn button svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+.Features-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 740px;
+  min-width: 740px;
+}
+
+.Features-card {
+  width: 48%;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Features-img-box {
+  width: 40px;
+  height: 40px;
+  background: #F3F5FE;
+  border-radius: 5px;
+  padding: 2px;
+  max-width: 40px;
+  min-width: 40px;
+  max-height: 40px;
+  min-height: 40px;
+}
+
+.Features-img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.Features-card span h2 {
+  color: #220E27;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+  margin: 0px;
+}
+
+.Features-card span p {
+  color: #68676C;
+  display: block;
+  font-size: 12px;
+  padding-top: 4px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0px;
 }
