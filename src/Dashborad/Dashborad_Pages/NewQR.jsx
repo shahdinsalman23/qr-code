@@ -19,6 +19,7 @@ import apps from '../../img/apps.png';
 import ImagesIcon from '../../img/imageicon.png';
 import DeviceHover from '../../img/Device hover.png';
 import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 const NewQR = () => {
 
@@ -46,6 +47,7 @@ const NewQR = () => {
 
     return (
         <>
+        <Container>
             <div className='NewQR'>
 
                 <div className="top-content--b--flex">
@@ -91,6 +93,7 @@ const NewQR = () => {
                     <p>Reprint required when updating Content</p>
                 </div>
             </div>
+            </Container>
         </>
     );
 };

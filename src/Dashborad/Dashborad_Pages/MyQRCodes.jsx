@@ -14,6 +14,7 @@ import QRADD from '../../img/QRADDicon.png';
 import QRBARCODE from '../../img/QRCODEbardcode.png';
 import QRPEN from '../../img/QRPEN.png';
 import QRDOYTSICONS from '../../img/qrcodedots.png';
+import { Container } from 'react-bootstrap';
 
 
 
@@ -26,6 +27,7 @@ import QRDOYTSICONS from '../../img/qrcodedots.png';
 const MyQRCodes = () => {
     return (
         <>
+        <Container>
             <div className='MyQRCodes'>
 
                 <div className="MyQRCodeshehader">
@@ -590,6 +592,8 @@ const MyQRCodes = () => {
 
                 </div>
             </div>
+        
+        </Container>
         </>
     );
 };
