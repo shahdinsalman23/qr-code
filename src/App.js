@@ -9,6 +9,7 @@ import Login from "./login/login";
 import Editinginner from "./marketing-page/Editinginner";
 import Dynamicinner from "./marketing-page/Dynamicinner";
 import Collaborating from "./marketing-page/Collaboratinginner";
+import Links from "./Dashborad/Dashboard_Routing/Routing";
 import Varietyinner from "./marketing-page/Varietyinner";
 import Analytics from "./marketing-page/Analyticsinner";
 import Facebook from "./marketing-page/Facebook";
@@ -20,6 +21,10 @@ import Password from "./marketing-page/Password";
 import Tracking from "./marketing-page/Tracking";
 import Signup from "./login/signup";
 import Qrtypeone from "./generate-qr-types/qr-type-1/Qrtypeone";
+<<<<<<< HEAD
+=======
+import Prices from "./prices/Prices";
+>>>>>>> 8791bec15cb9343ca37f9e176366cbca4f17d668
 
 
 
@@ -32,6 +37,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" exact element={<Landing/>} />
+          <Route path="/Prices" exact element={<Prices/>} />
           <Route path="/Editing" exact element={<Editinginner/>} />
           <Route path="/Dynamic" exact element={<Dynamicinner/>} />
           <Route path="/Collaborating" exact element={<Collaborating/>} />
@@ -47,8 +53,11 @@ function App() {
           <Route path="/signup" exact element={<Signup />} />
           <Route path="/login" exact element={<Login />} />
           <Route path="/qrtypeone" exact element={<Qrtypeone />} />
+           {/* All Dashboard related routes */}
+           <Route path="/*" element={<Links />} />
         </Routes>
       </Router>
+
       
     </Provider>
   );
